@@ -5,7 +5,7 @@
         var link = document.createElement('link');
         link.id = 'le34-team-css';
         link.rel = 'stylesheet';
-        link.href = '../../wp-content/litespeed/css/le34style.css';
+        link.href = 'https://raw.githack.com/NiklasLE34/LE34_LocalOverrides_/master/staging.le34.webnorth.cloud/wp-content/litespeed/css/le34style.css';
         document.head.appendChild(link);
     }
 })();
