@@ -6,7 +6,7 @@
         link.id = 'le34-team-css';
         link.rel = 'stylesheet';
         // Vi tilføjer ?v= + Math.random() så browseren tvinges til at hente din nyeste fil hver gang
-        link.href = 'https://dev.githack.com/NiklasLE34/LE34_LocalOverrides_/master/staging.le34.webnorth.cloud/wp-content/litespeed/css/le34style.css?t=' + Date.now();
+        link.href = 'https://githack.com/NiklasLE34/LE34_LocalOverrides_/master/staging.le34.webnorth.cloud/wp-content/litespeed/css/le34style.css?t=' + Date.now();
         document.head.appendChild(link);
     }
 })();
