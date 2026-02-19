@@ -1,0 +1,4 @@
+#forminator-module-11580 .forminator-field .forminator-radio .forminator-radio-image,#forminator-module-11580 .forminator-field .forminator-checkbox .forminator-checkbox-image {
+    width: 70px;
+    height: 70px
+}
