@@ -4,7 +4,7 @@
         link.id = 'le34-team-css';
         link.rel = 'stylesheet';
         // Vi bruger dit nye Netlify link her:
-        link.href = 'https://glittery-stroopwafel-9aa226.netlify.app/staging.le34.webnorth.cloud/wp-content/litespeed/css/le34style.css';
+        link.href = 'https://le34-localoverrides.pages.dev/staging.le34.webnorth.cloud/wp-content/litespeed/css/le34style.css';
         document.head.appendChild(link);
         console.log('LE34 CSS indlæst via Netlify');
     }
