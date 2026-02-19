@@ -7,5 +7,5 @@
     "gitdoc.autoPushDelay": 3000,
     "gitdoc.noVerify": true,
     "gitdoc.autoCommitDelay": 3000,
-    "gitdoc.enabled": true
+    "gitdoc.enabled": false
 }
