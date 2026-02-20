@@ -1,38 +1,29 @@
 /* ==============================================
-   GRID
+   Grid
    ============================================== */
 
 /* --- KNOBS (JUSTÉR) --- */
 :root{
-  /* Left rail width (sidebar rail) */
   --grid-aside-width: 326px;
-
-  /* Gap between aside and content (aside padding-right) */
   --grid-aside-gap: 64px;
 }
 
 /* --- SYSTEM (NIX PILLE) --- */
 :root{
-  /* Eyebrow width is rail minus gap (keeps the “meeting point” consistent) */
   --grid-eyebrow-max: calc(var(--grid-aside-width) - var(--grid-aside-gap));
 }
 
 @media (min-width: 1025px){
-  /* Aside rail */
   .container .aside{
     max-width: var(--grid-aside-width);
     padding-right: var(--grid-aside-gap);
   }
 
-  /* Content area meets rail */
   .container .grid{
     max-width: calc(100% - var(--grid-aside-width));
   }
 
-  /* Eyebrow/side content aligns to meeting point */
   .container .grid .eyebrow{
     max-width: var(--grid-eyebrow-max);
   }
 }
-
-

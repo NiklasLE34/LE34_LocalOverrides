@@ -1,31 +1,20 @@
 /* ==============================================
-   TOPNAV GAPS
+   Topnav knobs
    ============================================== */
 
 /* --- KNOBS (JUSTÉR) --- */
 :root{
-  /* Space reserved for right header content (search/lang/CTA) */
   --nav-right-reserve-desktop: 302px;
-
-  /* Menu gap between items */
   --nav-gap: 40px;
-
-  /* Safety stop: above this, layout starts to break */
   --nav-gap-max: 62px;
 }
 
 /* --- SYSTEM (NIX PILLE) --- */
 :root{
-  /* Keep gap controllable without pushing other header content */
   --nav-gap-safe: clamp(10px, var(--nav-gap), var(--nav-gap-max));
 }
 
 @media (min-width: 1025px){
-  /* IMPORTANT:
-     Do NOT width-lock .main-header__col--nav (it contains BOTH nav + right actions).
-     Lock only the nav block, so right actions keep their natural space. */
-
-  /* Ensure the column behaves as “nav left / actions right” */
   #header .main-header__col--nav{
     display: flex;
     justify-content: space-between;
@@ -33,19 +22,17 @@
     min-width: 0;
   }
 
-  /* Lock ONLY the nav block to the available slot */
   #header .main-header__nav{
     flex: 0 1 calc(100% - var(--nav-right-reserve-desktop));
     max-width: calc(100% - var(--nav-right-reserve-desktop));
     min-width: 0;
   }
 
-  /* Use gap knob (space-between would override gap) */
   #header .main-header__nav > ul{
     display: flex;
     justify-content: flex-start;
     gap: var(--nav-gap-safe);
-    width: auto;        /* key: avoid 100% “stretch” effects */
-    flex-wrap: nowrap;  /* knob is clamped instead of wrapping */
+    width: auto;
+    flex-wrap: nowrap;
   }
 }
