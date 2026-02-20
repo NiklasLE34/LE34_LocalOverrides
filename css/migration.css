@@ -1,10 +1,9 @@
 /* ==============================================
-   Topnav knobs
+   Topnav
    ============================================== */
 
-/* --- KNOBS (JUSTÉR) --- */
+/* --- JUSTÉR HER --- */
 :root{
-  --nav-right-reserve-desktop: 302px;
   --nav-gap: 40px;
   --nav-gap-max: 62px;
 }
@@ -19,13 +18,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 0;
-  }
-
-  #header .main-header__nav{
-    flex: 0 1 calc(100% - var(--nav-right-reserve-desktop));
-    max-width: calc(100% - var(--nav-right-reserve-desktop));
-    min-width: 0;
   }
 
   #header .main-header__nav > ul{
