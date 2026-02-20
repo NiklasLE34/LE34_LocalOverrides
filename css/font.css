@@ -1,4 +1,4 @@
-/* ==============================================
+               /* ==============================================
    TYPOGRAFI – KONTROLPANEL
    ============================================== */
 
@@ -106,7 +106,7 @@ p{
 /* SMÅ TEKSTER */
 .eyebrow{ font-size: var(--eyebrow); line-height: var(--lh-eyebrow); }
 .small{ font-size: var(--small); line-height: var(--lh-small); }
-.caption{ font-size: var(--caption); line-height: var(--lh-caption); }
+.module-new-image-video__caption p{ font-size: var(--caption); line-height: var(--lh-caption); }
 
 /* CITATER */
 .quote{ font-size: var(--quote); line-height: var(--lh-quote); }
