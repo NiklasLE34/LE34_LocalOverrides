@@ -3,10 +3,10 @@
         var link = document.createElement('link');
         link.id = 'le34-team-css';
         link.rel = 'stylesheet';
-        // Vi bruger dit nye Netlify link her:
-        link.href = 'https://le34-localoverrides.pages.dev/staging.le34.webnorth.cloud/wp-content/litespeed/css/le34style.css';
+        // Vi bruger dit nye Cloudflare link her:
+        link.href = 'https://le34-localoverrides.pages.dev/css/font.css';
         document.head.appendChild(link);
-        console.log('LE34 CSS indlæst via Netlify');
+        console.log('LE34 CSS indlæst via Cloudflare');
     }
 })();
 /* --- ORIGINAL KODE STARTER HERUNDER --- */
