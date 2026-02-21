@@ -11,7 +11,6 @@
 :root{
 
   /* GLOBAL SKALERING */
-  /* 1 = 16px | 0.9375 ≈ 15px | 0.875 ≈ 14px */
   --type-scale: 1;
 
   /* BREAKPOINT SKALERING */
@@ -25,7 +24,7 @@
   --h5: 1.25rem;
   --h6: 1rem;
 
-  --p: 1rem;
+  --p: 0.9375rem; /* 1 = 16px | 0.9375 ≈ 15px | 0.875 ≈ 14px */
 
   --eyebrow: 0.875rem;
   --small: 0.875rem;
