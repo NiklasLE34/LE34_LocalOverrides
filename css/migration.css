@@ -72,22 +72,33 @@
 
 
 /* ==============================================
-   Forslag: Hero – vertical spacing
+   Forslag: Heading to text spacing rules
    ============================================== */
 
 /* --- JUSTÉR HER --- */
 :root{
+  /* Global default for headings inside .text */
+  --space-heading-to-text: 16px;
+
+  /* Hero exception (keep as 16px unless you decide otherwise) */
   --hero-space-title-to-text: 16px;
-  --hero-space-text-to-cta: 32px;
 }
 
-/* --- APPLY (overstyr eksisterende regler) --- */
-.module-hero .text h1:not(:last-child){
+/* --- APPLY (matches theme selectors) --- */
+body .text h1:not(:last-child),
+body .text h2:not(:last-child),
+body .text h3:not(:last-child),
+body .text h4:not(:last-child),
+body .text h5:not(:last-child),
+body .text h6:not(:last-child),
+body .text .leading:not(:last-child){
+  margin-bottom: var(--space-heading-to-text);
+}
+
+/* Hero: override only H1 → text (so Hero can be different if needed later) */
+.module-hero .text h1:not(:last-child),
+.module-hero .module-hero__content .heading-01:not(:last-child){
   margin-bottom: var(--hero-space-title-to-text);
-}
-
-.module-hero .text{
-  margin-bottom: var(--hero-space-text-to-cta);
 }
 
 
@@ -120,4 +131,25 @@
 /* Override the global `p:not(:last-child){ margin-bottom: 1rem; }` locally */
 .module-text .text p:not(:last-child){
   margin-bottom: calc(var(--lh-p) * var(--text-paragraph-gap) * 1em);
+}
+
+
+
+/* ==============================================
+   Nav Right (Search & Languages)
+   ============================================== */
+
+/* Align ikon og sprogkode */
+nav.main-header__languages.lang-menu {
+  align-items: center;
+}
+
+/* Mere luft mellem ikon og sprogkode */
+.lang-menu svg { 
+  margin-right: 8px;
+}
+
+/* Tykkere stroke */
+.main-header {
+  stroke-width: 1.2;    
 }
