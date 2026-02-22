@@ -50,7 +50,7 @@
   /* 1 knob. 55ch ≈ behagelig læselængde for brødtekst */
   --hero-text-max: 68ch;
 
-  /* headline lidt smallere (så den ikke bliver “to lines of pain”) */
+  /* Headline lidt smallere (så den ikke bliver “to lines of pain”) */
   --hero-title-max: 26ch;
 }
 
@@ -78,7 +78,7 @@
 /* --- JUSTÉR HER --- */
 :root{
   /* Global default for headings inside .text */
-  --space-heading-to-text: 16px;
+  --space-heading-to-text: 12px;
 
   /* Hero exception (keep as 16px unless you decide otherwise) */
   --hero-space-title-to-text: 16px;
@@ -134,9 +134,8 @@ body .text .leading:not(:last-child){
 }
 
 
-
 /* ==============================================
-   Nav Right (Search & Languages)
+   Forslag: Smårettelser til Nav Right
    ============================================== */
 
 /* Align ikon og sprogkode */
@@ -153,3 +152,12 @@ nav.main-header__languages.lang-menu {
 .main-header {
   stroke-width: 1.2;    
 }
+
+
+/* ==============================================
+   Forslag: Caption opacity
+   ============================================== */
+
+.module-new-image-video__caption{
+opacity: 0.75;
+} 
