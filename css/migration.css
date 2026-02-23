@@ -1,17 +1,29 @@
 /* ==============================================
    64px over og under containere (meldt ind i Trello)
    ============================================== */
+
+/* Alle sektioner */
 .module .container{
   padding-top: 64px;
   padding-bottom: 64px;
 }
+
+  /* Undtagen første sektion på siden*/
+  section:first-child {
+}
+
 
 
 
 /* ==============================================
    64px over og under Image/Video Single Offset
    ============================================== */
-.module.module-new-image-video{
-  margin-top: 64px;
-  margin-bottom: 64px;
+.miv-single--right_offset{
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.miv-single--left_offset{
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
