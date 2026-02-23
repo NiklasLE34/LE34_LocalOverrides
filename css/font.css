@@ -30,8 +30,8 @@
   --small: 0.875rem;
   --caption: 0.875rem;
 
-  --quote: 2rem;
-  --quote-big: 3rem;
+  --quote: 1.5rem; /* 24px - rettet fra 2rem/32px */
+  --quote-big: 2.5rem;/* 40px - rettet fra 3rem/48px */
 
   --data-l: 2.5rem;
   --data-m: 2rem;
@@ -52,8 +52,8 @@
   --lh-eyebrow: 1.20;
   --lh-small: 1.50;
   --lh-caption: 1.40;
-  --lh-quote: 1.30;
-  --lh-quote-big: 1.10;
+  --lh-quote: 1.50;
+  --lh-quote-big: 1.30; /* 52px - Rettet fra 1.1/44px */
 
   /* HERO */
   --hero-p-scale: 1;

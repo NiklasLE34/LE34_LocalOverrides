@@ -7,3 +7,11 @@
 }
 
 
+
+/* ==============================================
+   64px over og under Image/Video Single Offset
+   ============================================== */
+.module.module-new-image-video{
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
