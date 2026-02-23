@@ -82,7 +82,7 @@
   --space-heading-to-text: 12px;
 
   /* Hero exception (keep as 16px unless you decide otherwise) */
-  --hero-space-title-to-text: 16px;
+  --hero-space-title-to-text: 24px;
 }
 
 /* --- APPLY (matches theme selectors) --- */
@@ -100,7 +100,17 @@ body .text .leading:not(:last-child){
 .module-hero .text h1:not(:last-child),
 .module-hero .module-hero__content .heading-01:not(:last-child){
   margin-bottom: var(--hero-space-title-to-text);
+}                                                              
+
+
+
+/* ==============================================               
+   Forslag: Mere space fra Hero Text til CTA (Hænger sammen med ↑)
+   ============================================== */
+.module-hero .text {
+    margin-bottom: 24px;
 }
+
 
 
 /* ==============================================
@@ -182,7 +192,16 @@ nav.main-header__languages.lang-menu {
    Forslag: Caption opacity
    ============================================== */
    
-/* --- JUSTÉR HER --- */
 .module-new-image-video__caption{
-opacity: 0.75;
+  opacity: 0.75;
 } 
+
+
+/* ==============================================
+   Forslag: Eyebrow small Bold -> Medium
+   ============================================== */
+.eyebrow--small {
+  font-weight: 350;
+}
+
+
