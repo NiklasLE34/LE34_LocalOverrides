@@ -1,16 +1,17 @@
-/* ==============================================
-   64px over og under containere (Meldt ind på Trello)
-   ============================================== */
 
-/* Alle sektioner */
-.module .container{
-  padding-top: 64px;
-  padding-bottom: 64px;
-}
+/* /* ============================================== */
+/*    64px over og under containere (Meldt ind på Trello) */
+/*    ============================================== */ */
 
-  /* Undtagen første sektion på siden*/
-  section:first-child {
-}
+/* /* Alle sektioner */ */
+/* .module .container{ */
+/*   padding-top: 64px; */
+/*   padding-bottom: 64px; */
+/* } */
+
+/*   /* Undtagen første sektion på siden*/ */
+/*   section:first-child { */
+/* } */
 
 
 
