@@ -86,15 +86,27 @@ html{
 }
 
 /* OVERSKRIFTER */
-h1.heading-01{ font-size: var(--h1); line-height: var(--lh-h1); }
-h2.heading-02{ font-size: var(--h2); line-height: var(--lh-h2); }
-h3.heading-03{ font-size: var(--h3); line-height: var(--lh-h3); }
-h4.heading-04{ font-size: var(--h4); line-height: var(--lh-h4); }
-h5.heading-05{ font-size: var(--h5); line-height: var(--lh-h5); }
-h6.heading-06{ font-size: var(--h6); line-height: var(--lh-h6); }
 
-/*SPECIFIKKE*/
-.thumb-item .heading-05{ font-size: var(--th5); line-height: var(--lh-th5); }
+/*h1*/
+h1.heading-01{ font-size: var(--h1); line-height: var(--lh-h1); }
+
+/*h2*/
+h2.heading-02{ font-size: var(--h2); line-height: var(--lh-h2); }
+
+
+/*h3*/
+h2.heading-03{ font-size: var(--h3); line-height: var(--lh-h3); }
+h3.heading-03{ font-size: var(--h3); line-height: var(--lh-h3); }
+
+/*h4*/
+h4.heading-04{ font-size: var(--h4); line-height: var(--lh-h4); }
+
+/*h5*/
+h5.heading-05{ font-size: var(--h5); line-height: var(--lh-h5); }
+h2.heading-05{ font-size: var(--h5); line-height: var(--lh-h5); }
+
+/*h6*/
+h6.heading-06{ font-size: var(--h6); line-height: var(--lh-h6); }
 
 /* BRØDTEKST */
 p{
