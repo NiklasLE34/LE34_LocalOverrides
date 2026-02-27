@@ -79,10 +79,10 @@
 /* --- JUSTÉR HER --- */
 :root{
   /* Global default for headings inside .text */
-  --space-heading-to-text: 12px;
+  --space-heading-to-text: 0.25em;
 
   /* Hero exception (keep as 16px unless you decide otherwise) */
-  --hero-space-title-to-text: 24px;
+  --hero-space-title-to-text: 0.5em;
 }
 
 /* --- APPLY (matches theme selectors) --- */
