@@ -114,7 +114,7 @@ body .text .leading:not(:last-child){
 
 
 /* ==============================================
-   Forslag: Text module – text breathing space
+   Forslag: Text module – column breathing space right
    ============================================== */
 
 /* --- JUSTÉR HER --- */
@@ -126,6 +126,25 @@ body .text .leading:not(:last-child){
 .module-text .text-item{
   padding-right: var(--text-column-padding-right);
 }
+
+
+
+/* ==============================================
+   Forslag: Text module – row breathing space right ("right rule")
+   ============================================== */
+.row .text-item {
+  padding-right: calc(var(--grid-aside-width));
+}
+
+
+
+/* ==============================================
+   Forslag: Quote module – breathing space right ("right rule")
+   ============================================== */
+.module .quote {
+  padding-right: calc(var(--grid-aside-width));
+}
+
 
 
 /* ==============================================
@@ -221,4 +240,12 @@ nav.main-header__languages.lang-menu {
    ============================================== */
 .text-items.text-items--multiple {
   gap: 64px 40px;
+}
+
+
+/* ==============================================
+   Forslag: Thumb H5 margin-bottom 
+   ============================================== */
+.thumb-item .heading-05{
+    margin-bottom: ;
 }
