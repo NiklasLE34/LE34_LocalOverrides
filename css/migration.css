@@ -20,8 +20,8 @@
    64px over og under Image/Video Single Offset
    ============================================== */
 .module-new-image-video .miv-single--right_offset{
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
 }
 
 .module-new-image-video .miv-single--left_offset{
