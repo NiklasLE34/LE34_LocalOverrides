@@ -19,15 +19,15 @@
 /* ==============================================
    64px over og under Image/Video Single Offset
    ============================================== */
-.miv-single--right_offset{
-  padding-top: 64px !important;
-  padding-bottom: 64px !important;
+/*.miv-single--right_offset{
+  padding-top: 64px
+  padding-bottom: 64px;
 }
 
 .miv-single--left_offset{
   padding-top: 64px;
   padding-bottom: 64px;
-}
+}*/
 
 
 
