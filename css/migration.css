@@ -19,12 +19,12 @@
 /* ==============================================
    64px over og under Image/Video Single Offset
    ============================================== */
-.miv-single--right_offset{
+.module-new-image-video .miv-single--right_offset{
   padding-top: 64px;
   padding-bottom: 64px;
 }
 
-.miv-single--left_offset{
+.module-new-image-video .miv-single--left_offset{
   padding-top: 64px;
   padding-bottom: 64px;
 }
