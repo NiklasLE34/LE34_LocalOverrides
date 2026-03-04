@@ -10,11 +10,11 @@
   --grid-vw-max: 1920;
 
   /* Aside width */
-  --grid-aside-width-min: 220px; /* was 260 */
+  --grid-aside-width-min: 200px; /* was 260 */
   --grid-aside-width-max: 326px;
 
   /* Aside gap */
-  --grid-aside-gap-min: 40px; /* was 48 */
+  --grid-aside-gap-min: 32px; /* was 48 */
   --grid-aside-gap-max: 64px;
 
 
