@@ -8,6 +8,14 @@
   --grid-aside-gap: 64px;
 }
 
+/* Laptop justering */
+@media (max-width: 1536px){
+  :root{
+    --grid-aside-width: 260px;
+    --grid-aside-gap: 48px;
+  }
+}
+
 /* --- SYSTEM (NIX PILLE) --- */
 :root{
   --grid-eyebrow-max: calc(var(--grid-aside-width) - var(--grid-aside-gap));
@@ -27,4 +35,3 @@
     max-width: var(--grid-eyebrow-max);
   }
 }
-

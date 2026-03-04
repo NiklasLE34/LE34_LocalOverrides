@@ -1,29 +1,39 @@
 /* ==============================================
-   Forslag: Topnav Gaps
+   Topnav Gaps
    ============================================== */
 
 /* --- JUSTÉR HER --- */
 :root{
-  --nav-gap: 40px;
-  --nav-gap-max: 62px;
+  --nav-gap: 62px; /* desktop */
+}
+
+/* Laptop */
+@media (max-width: 1536px){
+  :root{
+    --nav-gap: 24px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1025px){
+  :root{
+    --nav-gap: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px){
+  :root{
+    --nav-gap: 16px;
+  }
 }
 
 /* --- SYSTEM (NIX PILLE) --- */
-:root{
-  --nav-gap-safe: clamp(10px, var(--nav-gap), var(--nav-gap-max));
-}
-
 @media (min-width: 1025px){
-  #header .main-header__col--nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   #header .main-header__nav > ul{
     display: flex;
     justify-content: flex-start;
-    gap: var(--nav-gap-safe);
+    gap: var(--nav-gap);
     width: auto;
     flex-wrap: nowrap;
   }

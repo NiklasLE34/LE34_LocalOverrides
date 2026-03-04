@@ -64,15 +64,32 @@
 
 
 /* ==============================================
-   2) BREAKPOINTS
+   BREAKPOINTS
    Justér kun --mq-scale her
    ============================================== */
 
-@media (max-width: 1025px){
+/* Windows laptops (1920 @125%) */
+@media (max-width: 1536px){
   :root{ --mq-scale: 0.95; }
 }
 
-@media (max-width: 767px){
+/* Small laptops */
+@media (max-width: 1366px){
+  :root{ --mq-scale: 0.94; }
+}
+
+/* Tablets landscape */
+@media (max-width: 1025px){
+  :root{ --mq-scale: 0.93; }
+}
+
+/* Tablets portrait */
+@media (max-width: 768px){
+  :root{ --mq-scale: 0.92; }
+}
+
+/* Mobile */
+@media (max-width: 480px){
   :root{ --mq-scale: 0.90; }
 }
 
