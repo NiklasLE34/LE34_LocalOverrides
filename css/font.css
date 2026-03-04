@@ -72,22 +72,27 @@
    Justér kun --mq-scale her
    ============================================== */
 
-@media (max-width: 1536px){
-  :root{ --mq-scale: 0.95; }
+/* Large desktop */
+@media (max-width: 1920px){
+  :root{ --mq-scale: 1; }
 }
 
+/* Laptops */
+@media (max-width: 1600px){
+  :root{ --mq-scale: 0.96; }
+}
+
+/* Small laptops */
 @media (max-width: 1366px){
-  :root{ --mq-scale: 0.94; }
-}
-
-@media (max-width: 1025px){
   :root{ --mq-scale: 0.93; }
 }
 
-@media (max-width: 768px){
+/* Tablets */
+@media (max-width: 1025px){
   :root{ --mq-scale: 0.92; }
 }
 
+/* Mobile */
 @media (max-width: 480px){
   :root{ --mq-scale: 0.90; }
 }
