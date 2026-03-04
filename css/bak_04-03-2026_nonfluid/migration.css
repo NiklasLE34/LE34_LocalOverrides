@@ -1,0 +1,75 @@
+
+/* /* ============================================== */
+/*    64px over og under containere (Meldt ind på Trello) */
+/*    ============================================== */
+
+/* /* Alle sektioner */ */
+/* .module .container{ */
+/*   padding-top: 64px; */
+/*   padding-bottom: 64px; */
+/* } */
+
+/*   /* Undtagen første sektion på siden*/ 
+/*   section:first-child { */
+/* } */
+
+
+
+
+/* ==============================================
+   64px over og under Image/Video Single Offset
+   ============================================== */
+/*.miv-single--right_offset{
+  padding-top: 64px
+  padding-bottom: 64px;
+}
+
+.miv-single--left_offset{
+  padding-top: 64px;
+  padding-bottom: 64px;
+}*/
+
+
+
+/* ==============================================
+   Employees forsvinder (In progress på Trello)
+   ============================================== */
+section.module.employees .employee{
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+@media (min-width: 768px){
+  section.module.employees .employee{
+    flex-direction: row !important;
+  }
+}
+
+/* Reveal override */
+section.module.employees .employee,
+section.module.employees .employee__col,
+section.module.employees .animated{
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Image wipe overlay fix */
+section.module.employees .super-img::after,
+section.module.employees .wrap::after{
+  opacity: 0 !important;
+  display: none !important;
+}
+
+/*Streger synlige*/
+.animated.employee:after, .animated.table-item:after{
+opacity: 1;
+}
+
+
+
+/* ==============================================
+   Thumb 8 col ikke klikbar på hele containeren (delvist i gang på Trello)
+   ============================================== */
+a.thumb-item__full-link.initialized {
+    z-index: -1 !important;
+}

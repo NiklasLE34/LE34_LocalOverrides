@@ -1,0 +1,37 @@
+/* ==============================================
+   Grid
+   ============================================== */
+
+/* --- KNOBS (JUSTÉR) --- */
+:root{
+  --grid-aside-width: 326px;
+  --grid-aside-gap: 64px;
+}
+
+/* Laptop justering */
+@media (max-width: 1536px){
+  :root{
+    --grid-aside-width: 260px;
+    --grid-aside-gap: 48px;
+  }
+}
+
+/* --- SYSTEM (NIX PILLE) --- */
+:root{
+  --grid-eyebrow-max: calc(var(--grid-aside-width) - var(--grid-aside-gap));
+}
+
+@media (min-width: 1025px){
+  .container .aside{
+    max-width: var(--grid-aside-width);
+    padding-right: var(--grid-aside-gap);
+  }
+
+  .container .grid{
+    max-width: calc(100% - var(--grid-aside-width));
+  }
+
+  .container .grid .eyebrow{
+    max-width: var(--grid-eyebrow-max);
+  }
+}
