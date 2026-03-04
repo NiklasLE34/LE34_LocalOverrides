@@ -253,3 +253,86 @@ nav.main-header__languages.lang-menu {
    ============================================== */
 .thumb-item .heading-05{
 }
+
+
+/* ==============================================
+   Forslag: Sprogvælger redesign 
+   ============================================== */
+
+/* behold dropdown absolute, men forankr til venstre + sørg for flex virker */
+.lang-menu__nav{
+  left: 0;
+  top:32px;
+  right: auto;
+  display: flex;
+  flex-direction: column;
+  width: 88px; /* din dropdown-bredde */
+  padding: 6px 0 4px 0;
+}
+
+/* gør boksen symmetrisk (ingen top:-1 / +5px hacks) */
+.lang-menu__nav::after{
+  bottom: 0;
+  right: -8px;
+  left:-8px;
+  top: 0;
+  width: auto;
+  height: auto;
+  /*background-color:#999;*/ /*DEBUG*/
+ box-shadow: 0 6px 10px -6px #0000001f;
+  
+}
+/* A = række + klikflade */
+.lang-menu__item a{
+  display:flex;
+  align-items:center;
+  width:100%;
+  height:28px;
+  margin:0;
+  box-sizing:border-box;
+  /*background: rgba(0,0,0,0.15); */ /* DEBUG */
+}
+
+/* SPAN = label under globus */
+.lang-menu__item a span{
+  display:block;
+  width:20px;
+  text-align:center;
+  /*padding: 0 2px;*/
+}
+
+.lang-menu__item a::before,
+.lang-menu__item a::after{
+  bottom:8px;
+  left:28px;
+}
+
+/* skjul original tekst */
+.lang-menu__item a span{
+  font-size:0;
+}
+
+/* sprogforkortelse (en / sv) */
+.lang-menu__item a span::before{
+  display:inline-block;
+  width:20px;
+  text-align:center;
+  font-size:14px;
+  opacity: .6;
+  
+}
+
+/* sprognavn */
+.lang-menu__item a span::after{
+  font-size:14px;
+  margin-left:8px;
+  white-space:nowrap;
+}
+
+/* EN */
+.lang-menu__item a[href*="/en/"] span::before{ content:"en"; }
+.lang-menu__item a[href*="/en/"] span::after{ content:"English"; }
+
+/* SV */
+.lang-menu__item a[href*="/sv/"] span::before{ content:"sv"; }
+.lang-menu__item a[href*="/sv/"] span::after{ content:"Svenska"; }
