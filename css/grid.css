@@ -4,25 +4,31 @@
 
 /* --- KNOBS (JUSTÉR) --- */
 :root{
+
   /* Target range (CSS viewport widths) */
   --grid-vw-min: 1280;
   --grid-vw-max: 1920;
 
   /* Aside width */
-  --grid-aside-width-min: 260px;
+  --grid-aside-width-min: 220px; /* was 260 */
   --grid-aside-width-max: 326px;
 
   /* Aside gap */
-  --grid-aside-gap-min: 48px;
+  --grid-aside-gap-min: 40px; /* was 48 */
   --grid-aside-gap-max: 64px;
 
-  /* FLUID (NIX PILLE) */
+
+  /* ==============================================
+     FLUID BEREGNING (NIX PILLE)
+     ============================================== */
+
   --grid-aside-width: clamp(
     var(--grid-aside-width-min),
     calc(
       var(--grid-aside-width-min) +
       (var(--grid-aside-width-max) - var(--grid-aside-width-min)) *
-      ((100vw - (var(--grid-vw-min) * 1px)) / ((var(--grid-vw-max) - var(--grid-vw-min)) * 1px))
+      ((100vw - (var(--grid-vw-min) * 1px)) /
+      ((var(--grid-vw-max) - var(--grid-vw-min)) * 1px))
     ),
     var(--grid-aside-width-max)
   );
@@ -32,18 +38,22 @@
     calc(
       var(--grid-aside-gap-min) +
       (var(--grid-aside-gap-max) - var(--grid-aside-gap-min)) *
-      ((100vw - (var(--grid-vw-min) * 1px)) / ((var(--grid-vw-max) - var(--grid-vw-min)) * 1px))
+      ((100vw - (var(--grid-vw-min) * 1px)) /
+      ((var(--grid-vw-max) - var(--grid-vw-min)) * 1px))
     ),
     var(--grid-aside-gap-max)
   );
 }
 
+
 /* --- SYSTEM (NIX PILLE) --- */
+
 :root{
   --grid-eyebrow-max: calc(var(--grid-aside-width) - var(--grid-aside-gap));
 }
 
 @media (min-width: 1025px){
+
   .container .aside{
     max-width: var(--grid-aside-width);
     padding-right: var(--grid-aside-gap);
@@ -56,4 +66,5 @@
   .container .grid .eyebrow{
     max-width: var(--grid-eyebrow-max);
   }
+
 }
