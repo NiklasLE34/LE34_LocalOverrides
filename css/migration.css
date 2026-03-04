@@ -73,3 +73,28 @@ opacity: 1;
 a.thumb-item__full-link.initialized {
     z-index: -1 !important;
 }
+
+
+
+/* ==============================================
+   Header – compact spacing (desktop)
+   ============================================== */
+
+@media (max-width: 1440px) and (min-width: 1281px){
+
+  #header .main-header__languages{
+    margin-right: 24px !important; /* was 32 */
+  }
+
+  /* search + globe icons */
+  #header .main-header__search svg,
+  #header nav.main-header__languages.lang-menu > svg{
+    width: 18px !important; /* was 20 */
+    height: 18px !important;
+  }
+
+  #header .btn--narrow{
+    padding: 0 12px !important; /* was 20 */
+  }
+
+}
