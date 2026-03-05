@@ -133,26 +133,27 @@ body .text .leading:not(:last-child){
 
 
 /* ==============================================
-   Forslag: Text module – column breathing space right
+   Text module – breathing space right
+   (disabled on small mobile)
    ============================================== */
 
-/* --- JUSTÉR HER --- */
-:root{
-  --text-column-padding-right: 40px;
-}
+@media (min-width: 768px){
 
-/* --- APPLY --- */
-.module-text .text-item{
-  padding-right: var(--text-column-padding-right);
-}
+  /* --- JUSTÉR HER --- */
+  :root{
+    --text-column-padding-right: 40px;
+  }
 
+  /* Column breathing space */
+  .module-text .text-item{
+    padding-right: var(--text-column-padding-right);
+  }
 
+  /* Row breathing space ("right rule") */
+  .row .text-item{
+    padding-right: calc(var(--grid-aside-width));
+  }
 
-/* ==============================================
-   Forslag: Text module – row breathing space right ("right rule")
-   ============================================== */
-.row .text-item {
-  padding-right: calc(var(--grid-aside-width));
 }
 
 
