@@ -350,3 +350,27 @@ nav.main-header__languages.lang-menu {
 /* SV */
 .lang-menu__item a[href*="/sv/"] span::before{ content:"sv"; }
 .lang-menu__item a[href*="/sv/"] span::after{ content:"Svenska"; }
+
+
+/* ==============================================
+   Forslag: Accordions
+   ============================================== */
+/*mere spacing imellem og til højre*/
+
+[data-gap] {
+    gap: 64px;
+  	row-gap: 64px;
+}
+
+/* Mere margin-bottom på hvert item */
+
+.services-list__group ul li:not(:last-child) {
+margin-bottom: 32px;
+}
+/*----------------------------------------------------*/
+
+/* Forslag: 2 accordion rows = "højre-regel" */
+[data-gap][data-gap="2"] {
+    padding-right: calc(var(--grid-aside-width));
+}
+
