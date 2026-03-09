@@ -57,7 +57,7 @@
 
 .module-new-image-video .miv-single--left_offset{
   /* matcher eksisterende grid (rail + container padding) */
-  --offset: calc(var(--grid-aside-width));
+  --offset: calc(var(--grid-aside-width) + 40px);
 }
 
 
