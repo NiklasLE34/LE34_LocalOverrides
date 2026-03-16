@@ -375,3 +375,9 @@ margin-bottom: 32px;
     padding-right: calc(var(--grid-aside-width));
 }
 
+
+/* Forslag: Quote italic */
+.quote p{
+    font-style: italic;
+
+}
