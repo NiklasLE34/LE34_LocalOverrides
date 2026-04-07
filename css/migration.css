@@ -31,39 +31,39 @@
 
 
 
-/* ==============================================
-   Employees forsvinder (In progress på Trello)
-   ============================================== */
-section.module.employees .employee{
-  display: flex !important;
-  flex-direction: column !important;
-}
+/* /* ============================================== */
+/*    Employees forsvinder (In progress på Trello) */
+/*    ============================================== */ */
+/* section.module.employees .employee{ */
+/*   display: flex !important; */
+/*   flex-direction: column !important; */
+/* } */
 
-@media (min-width: 768px){
-  section.module.employees .employee{
-    flex-direction: row !important;
-  }
-}
+/* @media (min-width: 768px){ */
+/*   section.module.employees .employee{ */
+/*     flex-direction: row !important; */
+/*   } */
+/* } */
 
-/* Reveal override */
-section.module.employees .employee,
-section.module.employees .employee__col,
-section.module.employees .animated{
-  opacity: 1 !important;
-  transform: none !important;
-}
+/* /* Reveal override */ */
+/* section.module.employees .employee, */
+/* section.module.employees .employee__col, */
+/* section.module.employees .animated{ */
+/*   opacity: 1 !important; */
+/*   transform: none !important; */
+/* } */
 
-/* Image wipe overlay fix */
-section.module.employees .super-img::after,
-section.module.employees .wrap::after{
-  opacity: 0 !important;
-  display: none !important;
-}
+/* /* Image wipe overlay fix */ */
+/* section.module.employees .super-img::after, */
+/* section.module.employees .wrap::after{ */
+/*   opacity: 0 !important; */
+/*   display: none !important; */
+/* } */
 
-/*Streger synlige*/
-.animated.employee:after, .animated.table-item:after{
-opacity: 1;
-}
+/* /*Streger synlige*/ */
+/* .animated.employee:after, .animated.table-item:after{ */
+/* opacity: 1; */
+/* } */
 
 
 

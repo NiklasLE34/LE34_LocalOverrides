@@ -384,5 +384,5 @@ margin-bottom: 32px;
 
 /* Forslag: Separator mindre "tung" (#000 -> #999) */
 .module-separator .eyebrow{
-border-bottom: 1px solid #999 !important;
+border-bottom: 1px solid #999999;
 }
