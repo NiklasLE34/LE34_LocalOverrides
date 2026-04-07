@@ -381,3 +381,8 @@ margin-bottom: 32px;
     font-style: italic;*/
 
 }
+
+/* Forslag: Separator mindre "tung" (#000 -> #999) */
+.module-separator .eyebrow{
+border-bottom: 1px solid #999;
+}
