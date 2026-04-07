@@ -52,12 +52,12 @@
 /* --- SYSTEM (NIX PILLE) --- */
 .module-new-image-video .miv-single--right_offset{
   /* matcher eksisterende grid (rail + container padding) */
-  --offset: calc(var(--grid-aside-width) + 40px);
+  --offset: calc(var(--grid-aside-width) /*+ 40px*/);
 }
 
 .module-new-image-video .miv-single--left_offset{
   /* matcher eksisterende grid (rail + container padding) */
-  --offset: calc(var(--grid-aside-width) + 40px);
+  --offset: calc(var(--grid-aside-width) /*+ 40px*/);
 }
 
 
