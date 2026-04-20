@@ -40,14 +40,14 @@
   --nav: 0.875rem;
 
   /* LINE HEIGHT */
-  --lh-h1: 1.30;
+  --lh-h1: 1.20;
   --lh-h2: 1.15;
   --lh-h3: 1.22;
   --lh-h4: 1.30;
   --lh-h5: 1.35;
   --lh-h6: 1.40;
 
-  --lh-p: 1.75;
+  --lh-p: 1.6;
   --lh-eyebrow: 1.50;
   --lh-small: 1.50;
   --lh-caption: 1.40;
@@ -113,10 +113,11 @@ h2.heading-02{ font-size: var(--h2); line-height: var(--lh-h2); }
 h2.heading-03{ font-size: var(--h3); line-height: var(--lh-h3); }
 h3.heading-03{ font-size: var(--h3); line-height: var(--lh-h3); }
 
+h2.heading-04{ font-size: var(--h4); line-height: var(--lh-h4); }
 h4.heading-04{ font-size: var(--h4); line-height: var(--lh-h4); }
 
-h5.heading-05{ font-size: var(--h5); line-height: var(--lh-h5); }
 h2.heading-05{ font-size: var(--h5); line-height: var(--lh-h5); }
+h5.heading-05{ font-size: var(--h5); line-height: var(--lh-h5); }
 
 h6.heading-06{ font-size: var(--h6); line-height: var(--lh-h6); }
 
