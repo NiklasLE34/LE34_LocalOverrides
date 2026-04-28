@@ -101,7 +101,7 @@
   --space-heading-to-text: 0.25em;
 
   /* Hero exception (keep as 16px unless you decide otherwise) */
-  --hero-space-title-to-text: 0.5em;
+  --hero-space-title-to-text: 0.25em;
 }
 
 /* --- APPLY (matches theme selectors) --- */
