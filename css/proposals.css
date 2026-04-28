@@ -396,9 +396,8 @@ padding-right: 0 !important;
 
 /* Forslag: Quote italic */
 /*.quote p{
-    font-style: italic;*/
-
-}
+    font-style: italic;
+}*/
 
 /* Forslag: Separator mindre "tung" (#000 -> #999) */
 .module-separator .eyebrow{
@@ -411,8 +410,21 @@ border-bottom: 1px solid #999999;
 margin-top: 32px;
 }
 
+
 /* Forslag: Luft under Eyebrow Small */
 /*Note: denne skal måske ikke gælde eks. search eyebrows*/
 .eyebrow--small {
 margin-bottom: 1em;
+}
+
+
+/* Forslag: Separator line mindre "tung" (#000 -> #999) */
+.module-separator .eyebrow{
+border-bottom: 1px solid #999999;
+}
+
+
+/* Forslag: H1 Letter spacing */
+.module-hero__content .heading-01{
+  letter-spacing: .05rem;
 }
