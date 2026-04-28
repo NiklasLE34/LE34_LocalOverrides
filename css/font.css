@@ -122,7 +122,9 @@ h5.heading-05{ font-size: var(--h5); line-height: var(--lh-h5); }
 h6.heading-06{ font-size: var(--h6); line-height: var(--lh-h6); }
 
 /* BRØDTEKST */
-p{
+p,
+/*Lists*/
+#page li {
   font-size: var(--p);
   line-height: var(--lh-p);
 }

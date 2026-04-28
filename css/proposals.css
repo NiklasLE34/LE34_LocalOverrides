@@ -365,16 +365,34 @@ nav.main-header__languages.lang-menu {
 
 /* Mere margin-bottom på hvert item */
 
-.services-list__group ul li:not(:last-child) {
+/*.services-list__group ul li:not(:last-child) {
 margin-bottom: 32px;
-}
-/*----------------------------------------------------*/
+}*/
+
 
 /* Forslag: 2 accordion rows = "højre-regel" */
 [data-gap][data-gap="2"] {
     padding-right: calc(var(--grid-aside-width));
 }
 
+
+/* Fix at data padding ikke går ud over two-thumb */
+
+.two-thumbs__items.two-thumbs__items--normal.two-thumbs__items--center {
+    padding-right: 0;
+}
+
+/* Fix at data padding ikke går ud over accordions */
+.services-list{
+padding-right: 0 !important;
+}
+
+/* Fix at data padding ikke går ud over thumb grid */
+.grid{
+padding-right: 0 !important;
+}
+
+/*----------------------------------------------------*/
 
 /* Forslag: Quote italic */
 /*.quote p{
@@ -385,4 +403,16 @@ margin-bottom: 32px;
 /* Forslag: Separator mindre "tung" (#000 -> #999) */
 .module-separator .eyebrow{
 border-bottom: 1px solid #999999;
+}
+
+
+/* Forslag: CTA Contact button more margin top */
+.cta-contact .btn{
+margin-top: 32px;
+}
+
+/* Forslag: Luft under Eyebrow Small */
+/*Note: denne skal måske ikke gælde eks. search eyebrows*/
+.eyebrow--small {
+margin-bottom: 1em;
 }

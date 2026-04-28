@@ -98,3 +98,21 @@ a.thumb-item__full-link.initialized {
   }
 
 }
+
+
+
+/* Fix: Padding over og under offset images */
+
+/*.miv-single--right_offset{
+  padding-top: 64px;
+  padding-bottom: 64px;
+}*/
+
+/*.miv-single--left_offset{
+ padding-top: 64px;
+padding-bottom: 64px;
+}*/
+
+/*.module-text:first-child{
+padding-top:200px !important;
+}*/
