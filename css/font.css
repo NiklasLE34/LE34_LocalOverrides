@@ -57,7 +57,7 @@
   --lh-th5: 1.40; /* FIX: semikolon + konsistens */
 
   /* HERO */
-  --hero-p-scale: 1;
+  --hero-p-scale: 0.9;
 
   /* DATA module – typography knobs (titles + subtitle) */
   --data-title-big: 4rem;
