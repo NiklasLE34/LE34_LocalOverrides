@@ -151,7 +151,7 @@ p,
 
 /* UI */
 input, textarea{ font-size: var(--input); }
-.nav-item ul li a{ font-size: var(--nav); }
+.main-header__nav ul li a{ font-size: var(--nav); }
 
 /* Data titles */
 .data-item__title.number-item.big,
