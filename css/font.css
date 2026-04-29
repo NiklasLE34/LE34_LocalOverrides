@@ -18,15 +18,15 @@
   --h1: 2.75rem;
   --h2: 2.5rem;
   --h3: 2rem;
-  --h4: 1.5rem;
+  --h4: 1.3rem;
   --h5: 1.25rem;
   --th5: 1.25rem; /* thumb item h5 */
   --h6: 1rem;
 
-  --p: 0.9375rem; /* 1 = 16px | 0.9375 ≈ 15px | 0.875 ≈ 14px */
+  --p: 0.875rem; /* 1 = 16px | 0.9375 ≈ 15px | 0.875 ≈ 14px */
 
   --eyebrow: 0.8rem;
-  --small: 0.8rem;
+  --small: 0.7rem;
   --caption: 0.8rem;
 
   --quote: 1.5rem;     /* 24px */
@@ -137,7 +137,7 @@ p,
 
 /* SMÅ TEKSTER */
 .eyebrow{ font-size: var(--eyebrow); line-height: var(--lh-eyebrow); }
-.eyebrow--small{ font-size: var(--eyebrow); line-height: var(--lh-eyebrow); }
+.eyebrow--small{ font-size: var(--small); line-height: var(--lh-small); }
 .small{ font-size: var(--small); line-height: var(--lh-small); }
 .module-new-image-video__caption p{ font-size: var(--caption); line-height: var(--lh-caption); }
 
