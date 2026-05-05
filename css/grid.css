@@ -6,12 +6,12 @@
 :root{
 
   /* Target range (CSS viewport widths) */
-  --grid-vw-min: 1280;
-  --grid-vw-max: 1920;
+  --grid-vw-min: 1280;   /* was 1280 */
+  --grid-vw-max: 1920;   /* was 1920 */
 
   /* Aside width */
-  --grid-aside-width-min: 180px; /* was 260 */
-  --grid-aside-width-max: 326px; /* was 326 */
+  --grid-aside-width-min: 220px;  /* was 180 */ /* was 260 before that */
+  --grid-aside-width-max: 390px;  /* was 500 */ /* was 326 before that */
 
   /* Aside gap */
   --grid-aside-gap-min: 32px; /* was 48 */
