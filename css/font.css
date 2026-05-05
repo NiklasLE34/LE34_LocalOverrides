@@ -15,7 +15,7 @@
   --mq-scale: 1;
 
   /* STØRRELSER */
-  --h1: 2.5rem;
+  --h1: 3rem;
   --h2: 2.5rem;
   --h3: 2rem;
   --h4: 1.5rem;
@@ -25,19 +25,19 @@
 
   --p: 0.875rem; /* 1 = 16px | 0.9375 ≈ 15px | 0.875 ≈ 14px */
 
-  --eyebrow: 0.7rem;
-  --small: 0.7rem;
-  --caption: 0.8rem;
+  --eyebrow: 0.75rem; /* 12px */
+  --small: 0.75rem; /* 12px */
+  --caption: 0.8125rem; /* 13px */
 
   --quote: 1.5rem;     /* 24px */
-  --quote-big: 2.625rem; /* 40px */
+  --quote-big: 2.5rem; /* 40px */
 
   --data-l: 2.5rem;
   --data-m: 2rem;
   --data-s: 1.25rem;
 
   --input: 1rem;
-  --nav: 0.8rem;
+  --nav: 0.8125rem;
 
   /* LINE HEIGHT */
   --lh-h1: 1.20;
