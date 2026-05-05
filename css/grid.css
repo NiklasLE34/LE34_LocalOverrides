@@ -11,7 +11,7 @@
 
   /* Aside width */
   --grid-aside-width-min: 180px; /* was 260 */
-  --grid-aside-width-max: 500px; /* was 326 */
+  --grid-aside-width-max: 326px; /* was 326 */
 
   /* Aside gap */
   --grid-aside-gap-min: 32px; /* was 48 */
