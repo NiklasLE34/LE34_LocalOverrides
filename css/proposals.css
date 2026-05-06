@@ -197,6 +197,7 @@ nav.main-header__languages.lang-menu {
 /* Mere luft mellem ikon og sprogkode */
 .lang-menu svg { 
   margin-right: 8px;
+  display:none;
 }
 
 
@@ -345,11 +346,11 @@ nav.main-header__languages.lang-menu {
 }
 
 /* EN */
-.lang-menu__item a[href*="/en/"] span::before{ content:"en"; }
+/*.lang-menu__item a[href*="/en/"] span::before{ content:"en"; }*/
 .lang-menu__item a[href*="/en/"] span::after{ content:"English"; }
 
 /* SV */
-.lang-menu__item a[href*="/sv/"] span::before{ content:"sv"; }
+/*.lang-menu__item a[href*="/sv/"] span::before{ content:"sv"; }*/
 .lang-menu__item a[href*="/sv/"] span::after{ content:"Svenska"; }
 
 
