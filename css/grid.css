@@ -1,69 +1,107 @@
 /* ==============================================
-   Grid
+   HEADER – center nav UL between logo and right tools
    ============================================== */
 
-/* --- KNOBS (JUSTÉR) --- */
-:root{
+@media (min-width: 1025px) {
 
-  /* Target range (CSS viewport widths) */
-  --grid-vw-min: 1280;   /* was 1280 */
-  --grid-vw-max: 1920;   /* was 1920 */
+  #header > .container.flex--between {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 40px !important;
 
-  /* Aside width */
-  --grid-aside-width-min: 180px;   /* was 260 */
-  --grid-aside-width-max: 326px;   
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 0 !important;
+  }
 
-  /* Aside gap */
-  --grid-aside-gap-min: 32px; /* was 48 */
-  --grid-aside-gap-max: 64px;
+  #header .main-header__col:first-child {
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 
+  #header .main-header__logo {
+    margin: 0 !important;
+  }
 
-  /* ==============================================
-     FLUID BEREGNING (NIX PILLE)
-     ============================================== */
+  #header .main-header__col--nav.grid.flex--between {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
 
-  --grid-aside-width: clamp(
-    var(--grid-aside-width-min),
-    calc(
-      var(--grid-aside-width-min) +
-      (var(--grid-aside-width-max) - var(--grid-aside-width-min)) *
-      ((100vw - (var(--grid-vw-min) * 1px)) /
-      ((var(--grid-vw-max) - var(--grid-vw-min)) * 1px))
-    ),
-    var(--grid-aside-width-max)
-  );
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    align-items: center !important;
 
-  --grid-aside-gap: clamp(
-    var(--grid-aside-gap-min),
-    calc(
-      var(--grid-aside-gap-min) +
-      (var(--grid-aside-gap-max) - var(--grid-aside-gap-min)) *
-      ((100vw - (var(--grid-vw-min) * 1px)) /
-      ((var(--grid-vw-max) - var(--grid-vw-min)) * 1px))
-    ),
-    var(--grid-aside-gap-max)
-  );
+    gap: 0 !important;
+    column-gap: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+    width: auto !important;
+  }
+
+  #header .main-header__nav {
+    grid-column: 1 !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #header .main-header__nav > ul {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+
+    width: max-content !important;
+    max-width: none !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+
+  #header .main-header__wrap {
+    grid-column: 2 !important;
+    flex: 0 0 auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 }
 
 
-/* --- SYSTEM (NIX PILLE) --- */
+/* ==============================================
+   CONTENT GRID – nav-driven left rule
+   ============================================== */
 
-:root{
+:root {
+  --grid-aside-width: 326px;
+  --grid-aside-gap: 64px;
   --grid-eyebrow-max: calc(var(--grid-aside-width) - var(--grid-aside-gap));
 }
 
-@media (min-width: 1025px){
+@media (min-width: 1025px) {
 
-  .container .aside{
+  .container .aside {
     max-width: var(--grid-aside-width);
     padding-right: var(--grid-aside-gap);
+    box-sizing: border-box !important;
   }
 
-  .container .grid{
+  .container .grid {
     max-width: calc(100% - var(--grid-aside-width));
   }
 
-  .container .grid .eyebrow{
+  .container .grid .eyebrow {
     max-width: var(--grid-eyebrow-max);
   }
 
