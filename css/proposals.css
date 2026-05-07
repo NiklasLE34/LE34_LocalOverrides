@@ -151,7 +151,7 @@ body .text .leading:not(:last-child){
 
   /* Row breathing space ("right rule") */
   .row .text-item{
-    padding-right: calc(var(--grid-aside-width));
+    padding-right: calc(var(--text-column-padding-right));
   }
 
 }
