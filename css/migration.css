@@ -93,9 +93,9 @@ a.thumb-item__full-link.initialized {
     height: 18px !important;
   }
 
-  #header .btn--narrow{
-    padding: 0 12px !important; /* was 20 */
-  }
+  /* #header .btn--narrow{ */
+  /*   padding: 0 12px !important; /* was 20 */ */
+  /* } */
 
 }
 
