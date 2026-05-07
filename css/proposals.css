@@ -10,7 +10,7 @@
   /* Desktop caps */
   --nav-gap-min: 20px; /* at 1280 */
   --nav-gap-mid: 24px; /* at 1536 */
-  --nav-gap-max: 40px; /* at 1920 */
+  --nav-gap-max: 32px; /* at 1920 */ /* was 40px */
 
   /* Fluid segments (NIX PILLE) */
   --nav-gap-fluid-1280-1536: calc(0.694vw + 11.111px);  /* 1280->20, 1536->24 */
