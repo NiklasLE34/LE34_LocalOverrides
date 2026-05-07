@@ -1,9 +1,12 @@
 (function() {
 
-    var baseUrl = 'https://le34-localoverrides.pages.dev/css/';
-    var files = ['font.css', 'grid.css', 'migration.css', 'proposals.css'];
+    var cssBaseUrl = 'https://le34-localoverrides.pages.dev/css/';
+    var jsBaseUrl = 'https://le34-localoverrides.pages.dev/js/';
 
-    files.forEach(function(file) {
+    var cssFiles = ['font.css', 'grid.css', 'migration.css', 'proposals.css'];
+    var jsFiles = ['left-rule.js'];
+
+    cssFiles.forEach(function(file) {
 
         var id = 'le34-css-' + file.replace('.css', '');
 
@@ -12,13 +15,28 @@
             var link = document.createElement('link');
             link.id = id;
             link.rel = 'stylesheet';
-            link.href = baseUrl + file;
+            link.href = cssBaseUrl + file;
 
             document.head.appendChild(link);
         }
     });
 
-    console.log('LE34 CSS-filer indlæst via Cloudflare');
+    jsFiles.forEach(function(file) {
+
+        var id = 'le34-js-' + file.replace('.js', '');
+
+        if (!document.getElementById(id)) {
+
+            var script = document.createElement('script');
+            script.id = id;
+            script.src = jsBaseUrl + file;
+            script.defer = true;
+
+            document.head.appendChild(script);
+        }
+    });
+
+    console.log('LE34 CSS + JS overrides indlæst via Cloudflare');
 
 })();
 /* --- ORIGINAL KODE STARTER HERUNDER --- */

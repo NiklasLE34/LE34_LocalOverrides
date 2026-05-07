@@ -54,7 +54,7 @@
   --lh-quote: 1.50;
   --lh-quote-big: 1.40;
 
-  --lh-th5: 1.40; /* FIX: semikolon + konsistens */
+  --lh-th5: 1.40;
 
   /* HERO */
   --hero-p-scale: 1;
@@ -150,7 +150,7 @@ p,
 .data-medium{ font-size: var(--data-m); }
 .data-small{ font-size: var(--data-s); }
 
-/* UI */
+/* NAV */
 input, textarea{ font-size: var(--input); }
 .main-header__nav ul li a{ font-size: var(--nav); }
 
