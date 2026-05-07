@@ -89,7 +89,7 @@
   --grid-eyebrow-max: calc(var(--grid-aside-width) - var(--grid-aside-gap));
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1281px) {
 
   .container .aside {
     max-width: var(--grid-aside-width);
