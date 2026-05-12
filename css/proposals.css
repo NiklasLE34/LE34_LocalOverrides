@@ -372,7 +372,7 @@ margin-bottom: 32px;
 
 
 /* Forslag: 2 accordion rows = "højre-regel" */
-[data-gap][data-gap="2"] {
+.module.accordion {
     padding-right: calc(var(--grid-aside-width));
 }
 
@@ -431,13 +431,21 @@ border-bottom: 1px solid #999999;
 }
 
 
-/* Thumb Headings padding right */
+/* Thumb Headings & paragraphs padding right */
 .thumb-item__heading{
 padding-right:40px;
 }
+
+.thumb-item__description{
+padding-right: 40px
+}
+
+/* -------------------- */
 
 
 /* Tekstlængder "højreregel" */
 .text-items{
 padding-right: calc(var(--grid-aside-width));
 }
+
+
