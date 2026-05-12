@@ -67,6 +67,8 @@
 
     margin: 0 auto !important;
     padding: 0 !important;
+
+    transform: translateX(40px);
   }
 
   #header .main-header__wrap {

@@ -68,10 +68,10 @@
 /* --- JUSTÉR HER --- */
 :root{
   /* 1 knob. 55ch ≈ behagelig læselængde for brødtekst */
-  --hero-text-max: 68ch;
+  --hero-text-max: 64ch; /* was 68ch */
 
   /* Headline lidt smallere (så den ikke bliver “to lines of pain”) */
-  --hero-title-max: 26ch;
+  --hero-title-max: 32ch; /* was 26ch */
 }
 
 /* --- SYSTEM (NIX PILLE) --- */
@@ -140,9 +140,9 @@ body .text .leading:not(:last-child){
 @media (min-width: 768px){
 
   /* --- JUSTÉR HER --- */
-  :root{
+  /*:root{
     --text-column-padding-right: 40px;
-  }
+  }*/
 
   /* Column breathing space */
   .module-text .text-item{
