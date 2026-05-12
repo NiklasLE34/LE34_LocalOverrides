@@ -177,3 +177,8 @@ input, textarea{ font-size: var(--input); }
 .data-item__subtitle .heading-05{
   font-size: var(--data-subtitle-size);
 }
+
+.link-cta, .btn{
+font-size: 0.8125;
+}
+

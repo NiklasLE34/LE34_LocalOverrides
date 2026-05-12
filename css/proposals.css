@@ -429,3 +429,15 @@ border-bottom: 1px solid #999999;
 .module-hero__content .heading-01{
   letter-spacing: .05rem;
 }
+
+
+/* Thumb Headings padding right */
+.thumb-item__heading{
+padding-right:40px;
+}
+
+
+/* Tekstlængder "højreregel" */
+.text-items{
+padding-right: calc(var(--grid-aside-width));
+}
