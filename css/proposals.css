@@ -320,7 +320,7 @@ nav.main-header__languages.lang-menu {
 .lang-menu__item a::before,
 .lang-menu__item a::after{
   bottom:8px;
-  left:28px;
+  /*left:28px;*/
 }
 
 /* skjul original tekst */
@@ -352,6 +352,17 @@ nav.main-header__languages.lang-menu {
 /* SV */
 /*.lang-menu__item a[href*="/sv/"] span::before{ content:"sv"; }*/
 .lang-menu__item a[href*="/sv/"] span::after{ content:"Svenska"; }
+
+
+/* Aktivt sprog i headeren */
+.lang-menu__current span{
+  font-size:0;
+}
+
+.lang-menu__current span::after{
+  content:"Dansk";
+  font-size:14px;
+}
 
 
 /* ==============================================
