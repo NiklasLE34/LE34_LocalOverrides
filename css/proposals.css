@@ -161,9 +161,9 @@ body .text .leading:not(:last-child){
 /* ==============================================
    Forslag: Quote module – breathing space right ("right rule")
    ============================================== */
-.module .quote {
+/*.module .quote {
   padding-right: calc(var(--grid-aside-width));
-}
+}*/
 
 
 
@@ -455,8 +455,8 @@ padding-right: 40px
 
 
 /* Tekstlængder "højreregel" */
-.text-items{
+/*.text-items{
 padding-right: calc(var(--grid-aside-width));
-}
+}*/
 
 

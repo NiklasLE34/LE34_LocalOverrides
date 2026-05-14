@@ -117,9 +117,13 @@
 @media (min-width: 1025px) and (max-width: 1280px) {
 
   .container .aside {
-    max-width: 300px !important;
-    padding-right: 64px !important;
+    max-width: 326px !important;
+    padding-right: 0px !important;
     margin-bottom: 0 !important;
+  }
+
+  .container .aside .text {
+    padding-right:40px;
   }
 
 }

@@ -120,7 +120,6 @@ padding-top:200px !important;
 
 /* Fix slider padding left */
 
-@media (width >= 1025px) {
-    .container--spacing-left {
-    padding-left: 40px;
-    }
+.container--spacing-left {
+  padding-left: 40px !important;
+}
