@@ -111,7 +111,7 @@
 
 }
 /* Under 1281 brug 326px */
-@media (max-width: 1281px) {
+@media (min-width: 769px) and (max-width: 1281px) {
     .container .grid {
         max-width: calc(100% - 326px);
     }
