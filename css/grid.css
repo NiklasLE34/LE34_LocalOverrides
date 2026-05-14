@@ -1,5 +1,27 @@
 /* ==============================================
+   GRID.CSS – clean left-rule / right-rule logic
+   ============================================== */
+
+
+/* ==============================================
+   VARIABLES
+   ============================================== */
+
+:root {
+  /* JS updates this above 1280px based on nav position */
+  --grid-aside-width: 326px;
+
+  /* Used when desktop nav is gone / cannot be measured */
+  --grid-aside-width-fallback: clamp(220px, 25vw, 326px);
+
+  --grid-aside-gap: 64px;
+  --grid-eyebrow-max: calc(var(--grid-aside-width) - var(--grid-aside-gap));
+}
+
+
+/* ==============================================
    HEADER – center nav UL between logo and right tools
+   Only applies while desktop header exists
    ============================================== */
 
 @media (min-width: 1025px) {
@@ -81,17 +103,10 @@
 }
 
 
-
-
 /* ==============================================
-   CONTENT GRID – nav-driven left rule
+   CONTENT GRID – large desktop
+   Nav exists, so use nav-driven --grid-aside-width
    ============================================== */
-
-:root {
-  --grid-aside-width: 326px;
-  --grid-aside-gap: 64px;
-  --grid-eyebrow-max: calc(var(--grid-aside-width) - var(--grid-aside-gap));
-}
 
 @media (min-width: 1281px) {
 
@@ -99,55 +114,71 @@
     max-width: var(--grid-aside-width);
     padding-right: var(--grid-aside-gap);
     box-sizing: border-box !important;
+    margin-bottom: 0;
   }
 
   .container .grid {
-    max-width: calc(100% - 326px);
+    max-width: calc(100% - var(--grid-aside-width));
+    padding-right: var(--grid-aside-width);
+    box-sizing: border-box;
   }
 
   .container .grid .eyebrow {
     max-width: var(--grid-eyebrow-max);
   }
-
 }
-/* Under 1281 brug 326px */
-@media (min-width: 769px) and (max-width: 1281px) {
-    .container .grid {
-        max-width: calc(100% - 326px);
-    }
-}
-
-/*@media (width >= 769px) {
-    .container .aside {
-        max-width: 326px;
-    }    
-        }*/
 
 
 /* ==============================================
-   Force desktop aside width below 1281px
+   CONTENT GRID – medium/tablet desktop
+   Nav is gone or unreliable, so use controlled fallback
+   No right-rule here
+   ============================================== */
+
+@media (min-width: 769px) and (max-width: 1280px) {
+
+  .container .grid {
+    max-width: calc(100% - var(--grid-aside-width-fallback));
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+}
+
+
+/* ==============================================
+   ASIDE – desktop-ish fallback below nav breakpoint
+   Keeps aside predictable without relying on nav
    ============================================== */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
 
   .container .aside {
-    max-width: 326px !important;
-    padding-right: 0px !important;
+    max-width: var(--grid-aside-width-fallback) !important;
+    padding-right: 0 !important;
     margin-bottom: 0 !important;
+    box-sizing: border-box !important;
   }
 
   .container .aside .text {
-    padding-right:40px;
+    padding-right: 40px;
+  }
+}
+
+
+/* ==============================================
+   TABLET / SMALLER
+   Let layout breathe naturally
+   ============================================== */
+
+@media (max-width: 768px) {
+
+  .container .grid {
+    max-width: none;
+    padding-right: 0;
   }
 
+  .container .aside {
+    max-width: none;
+    padding-right: 0;
+  }
 }
-
-/* Højreregel over 1281 */
-@media (min-width: 1281px) {
-	.grid {
-		padding-right: var(--grid-aside-width);
-	}
-}
-
-
-
