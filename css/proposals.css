@@ -461,4 +461,12 @@ padding-right: 40px
 padding-right: calc(var(--grid-aside-width));
 }*/
 
+/* ==============================================
+   Hero – cancel 22px bottom-margin jump
+   ============================================== */
 
+@media (max-width: 1024px) {
+  .module-hero {
+    margin-bottom: 64px !important;
+  }
+}
