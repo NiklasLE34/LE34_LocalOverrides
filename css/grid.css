@@ -117,6 +117,12 @@
     }
 }
 
+@media (width >= 769px) {
+    .container .aside {
+        max-width: 326px;
+    }    
+        }
+
 
 /* ==============================================
    Force desktop aside width below 1281px
