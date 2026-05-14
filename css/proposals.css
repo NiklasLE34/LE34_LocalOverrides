@@ -382,12 +382,6 @@ margin-bottom: 32px;
 }*/
 
 
-/* Forslag: 2 accordion rows = "højre-regel" */
-.module.accordion {
-    padding-right: calc(var(--grid-aside-width));
-}
-
-
 /* Fix at data padding ikke går ud over two-thumb */
 
 .two-thumbs__items.two-thumbs__items--normal.two-thumbs__items--center {
