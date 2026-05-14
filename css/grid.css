@@ -127,3 +127,9 @@
   }
 
 }
+
+/* Højreregel */
+.grid{
+	padding-right: var(--grid-aside-width);
+}
+
