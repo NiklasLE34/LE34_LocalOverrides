@@ -462,11 +462,19 @@ padding-right: calc(var(--grid-aside-width));
 }*/
 
 /* ==============================================
-   Hero – cancel 22px bottom-margin jump
+   Hero – cancel 22px mobile/tablet spacing jumps
    ============================================== */
 
 @media (max-width: 1024px) {
+
   .module-hero {
     margin-bottom: 64px !important;
   }
+
+  .module-hero.module-hero--v3 .module-hero__content {
+    margin-top: 64px !important;
+  }
+
 }
+
+
