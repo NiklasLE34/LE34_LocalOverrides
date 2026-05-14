@@ -11,8 +11,12 @@
   /* JS updates this above 1280px based on nav position */
   --grid-aside-width: 326px;
 
-  /* Used when desktop nav is gone / cannot be measured */
-  --grid-aside-width-fallback: clamp(220px, 25vw, 326px);
+  /*
+    Used when desktop nav is gone / cannot be measured.
+    Glides smoothly from ~222px at 1280px
+    down toward normal container margins at 768px.
+  */
+  --grid-aside-width-fallback: clamp(20px, calc(39.453125vw - 283px), 222px);
 
   --grid-aside-gap: 64px;
   --grid-eyebrow-max: calc(var(--grid-aside-width) - var(--grid-aside-gap));
