@@ -129,7 +129,7 @@
 }
 
 /* Højreregel */
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
 	.grid {
 		padding-right: var(--grid-aside-width);
 	}
