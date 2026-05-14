@@ -49,15 +49,23 @@
    Forslag: Offset Image – align med venstre-regel
    ============================================== */
 
-/* --- SYSTEM (NIX PILLE) --- */
-.module-new-image-video .miv-single--right_offset{
-  /* matcher eksisterende grid (rail + container padding) */
-  --offset: calc(var(--grid-aside-width) /*+ 40px*/);
+.module-new-image-video .miv-single--right_offset,
+.module-new-image-video .miv-single--left_offset {
+  --offset: var(--grid-aside-width) !important;
 }
 
-.module-new-image-video .miv-single--left_offset{
-  /* matcher eksisterende grid (rail + container padding) */
-  --offset: calc(var(--grid-aside-width) /*+ 40px*/);
+@media (min-width: 769px) and (max-width: 1280px) {
+  .module-new-image-video .miv-single--right_offset,
+  .module-new-image-video .miv-single--left_offset {
+    --offset: var(--grid-aside-width-fallback) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .module-new-image-video .miv-single--right_offset,
+  .module-new-image-video .miv-single--left_offset {
+    --offset: 0px !important;
+  }
 }
 
 
