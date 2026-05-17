@@ -186,3 +186,11 @@
     padding-right: 0;
   }
 }
+
+
+/* Forhindr nav ul i at rykke op mod venstre ved nav scroll effekt */
+.main-header__col:first-child {
+    width: 72px;
+    min-width: 72px;
+    flex: 0 0 72px;
+}
