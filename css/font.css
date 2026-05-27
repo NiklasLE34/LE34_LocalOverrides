@@ -63,7 +63,7 @@
   --data-title-big: 4rem;
   --data-title-medium: 3rem;
   --data-title-small: 2rem;
-  --data-subtitle-size: 1.25rem;
+  --data-subtitle-size: 1.1rem;
 }
 
 
@@ -203,4 +203,9 @@ font-size: 0.875rem;
 
 .employee__text, .employee__text a{
 font-size: var(--p);
+}
+
+
+.data-item__header {
+font-size: 1.75rem;
 }
