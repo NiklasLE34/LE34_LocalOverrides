@@ -144,3 +144,9 @@ padding-right: 0px !important;
 .employee__text:not(:last-child) {
     margin-top: 2px !important;
 }
+
+
+/* Fix at three thumbs ikke er påvirket af Accordions gap*/
+[data-gap][data-gap="3"]{
+gap:40px;
+}
