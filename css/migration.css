@@ -123,3 +123,15 @@ padding-top:200px !important;
 .container--spacing-left {
   padding-left: 40px !important;
 }
+
+
+/* Thumb items ikke fuld bredde */
+.thumb-item--has-full-link .text--visible{
+  max-width: 96% !important;
+}
+
+
+/* Fix at tekst-padding (højreregel) ikke går ud over thumb grid */
+.thumb-grid .grid{
+padding-right: 0px !important;
+}

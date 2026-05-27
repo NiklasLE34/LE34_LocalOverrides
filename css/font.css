@@ -36,7 +36,7 @@
   --data-m: 2rem;
   --data-s: 1.25rem;
 
-  --input: 1rem;
+  --input: 0.875rem;
   --nav: 0.8125rem;
 
   /* LINE HEIGHT */
@@ -194,4 +194,9 @@ font-size: 1rem;
 
 .module-hero .fixed-block .image-caption {
 font-size: var(--caption);
+}
+
+/* Eks.klikbare tekster i Offices-modul  */
+.link-cta span{
+font-size: 0.875rem;
 }
