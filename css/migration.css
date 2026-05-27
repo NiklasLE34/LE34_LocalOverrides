@@ -135,3 +135,12 @@ padding-top:200px !important;
 .thumb-grid .grid{
 padding-right: 0px !important;
 }
+
+/* Mindre luft mellem linjer i Employees modul */
+.employee__contact .employee__text {
+    margin-top: 2px !important;
+}
+
+.employee__text:not(:last-child) {
+    margin-top: 2px !important;
+}

@@ -196,7 +196,11 @@ font-size: 1rem;
 font-size: var(--caption);
 }
 
-/* Eks.klikbare tekster i Offices-modul  */
+/* Tekster i Office og Employees moduler  */
 .link-cta span{
 font-size: 0.875rem;
+}
+
+.employee__text, .employee__text a{
+font-size: var(--p);
 }
