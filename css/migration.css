@@ -150,3 +150,11 @@ padding-right: 0px !important;
 [data-gap][data-gap="3"]{
 gap:40px;
 }
+
+/* Fix at tekst-padding (højreregel) ikke går ud over Box */
+@media (min-width: 1281px) {
+    .container .grid {
+        padding-right: 0 !Important;
+    }
+}
+
