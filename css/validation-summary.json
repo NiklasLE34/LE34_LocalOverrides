@@ -1,0 +1,428 @@
+{
+  "font.css": {
+    "original_sha256": "27e4556d29cfe3f1fd63c2badbe0ccce6fc5adaa86e3357765529ce6c801ee06",
+    "organized_sha256": "1788eabe2345fba052df74f93e16413fce608fa3ea14972a5c6e455074fca683",
+    "line_count_original": 211,
+    "line_count_organized": 211,
+    "active_css_identical_exact_after_comment_strip": true,
+    "replacements": [
+      {
+        "old": "TYPOGRAFI – KONTROLPANEL",
+        "new": "TYPOGRAPHY — CONTROL PANEL",
+        "count": 1
+      },
+      {
+        "old": "1) JUSTÉR HER",
+        "new": "1) ADJUST HERE",
+        "count": 1
+      },
+      {
+        "old": "Alt tweak sker i denne blok",
+        "new": "All type tweaks live in this block",
+        "count": 1
+      },
+      {
+        "old": "GLOBAL SKALERING",
+        "new": "GLOBAL SCALE",
+        "count": 1
+      },
+      {
+        "old": "BREAKPOINT SKALERING",
+        "new": "BREAKPOINT SCALE",
+        "count": 1
+      },
+      {
+        "old": "STØRRELSER",
+        "new": "SIZES",
+        "count": 1
+      },
+      {
+        "old": "DATA module – typography knobs (titles + subtitle)",
+        "new": "DATA MODULE — typography knobs (titles + subtitle)",
+        "count": 1
+      },
+      {
+        "old": "Justér kun --mq-scale her",
+        "new": "Adjust only --mq-scale here",
+        "count": 1
+      },
+      {
+        "old": "3) SYSTEM – LAD STÅ",
+        "new": "3) SYSTEM — DO NOT TOUCH",
+        "count": 1
+      },
+      {
+        "old": "OVERSKRIFTER",
+        "new": "HEADINGS",
+        "count": 1
+      },
+      {
+        "old": "BRØDTEKST",
+        "new": "BODY TEXT",
+        "count": 1
+      },
+      {
+        "old": "/*Lists*/",
+        "new": "/* LISTS */",
+        "count": 1
+      },
+      {
+        "old": "SMÅ TEKSTER",
+        "new": "SMALL TEXT",
+        "count": 1
+      },
+      {
+        "old": "CITATER",
+        "new": "QUOTES",
+        "count": 1
+      },
+      {
+        "old": "Tekster i Office og Employees moduler",
+        "new": "Office and Employees module text",
+        "count": 1
+      }
+    ]
+  },
+  "grid.css": {
+    "original_sha256": "60cf6a18ae22a2bd0e83dedc1833e440d4b31865b0629fae0c5bdf18e75b3524",
+    "organized_sha256": "3c5be2b1f42ce73900317c4d97efd94e16323484e1c2ec544da54cd16b7d3ea6",
+    "line_count_original": 196,
+    "line_count_organized": 196,
+    "active_css_identical_exact_after_comment_strip": true,
+    "replacements": [
+      {
+        "old": "/* Forhindr nav ul i at rykke op mod venstre ved nav scroll effekt */",
+        "new": "/* Prevent nav ul from shifting left during nav scroll effect */",
+        "count": 1
+      }
+    ]
+  },
+  "migration.css": {
+    "original_sha256": "9fa434520b5ad52f5ec29b0af8276e811c8f7705ee641cefa7ce67096d78dcec",
+    "organized_sha256": "700eaf94e57115cbb2b8ce5ba1240183a2c14a3eb22493cf26f43be82be5c3c9",
+    "line_count_original": 160,
+    "line_count_organized": 160,
+    "active_css_identical_exact_after_comment_strip": true,
+    "replacements": [
+      {
+        "old": "64px over og under containere (Meldt ind på Trello)",
+        "new": "64px above/below containers (reported in Trello)",
+        "count": 1
+      },
+      {
+        "old": "/* /* Alle sektioner */ */",
+        "new": "/* /* All sections */ */",
+        "count": 1
+      },
+      {
+        "old": "Undtagen første sektion på siden",
+        "new": "Except first section on the page",
+        "count": 1
+      },
+      {
+        "old": "64px over og under Image/Video Single Offset",
+        "new": "64px above/below Image/Video Single Offset",
+        "count": 1
+      },
+      {
+        "old": "Employees forsvinder (In progress på Trello)",
+        "new": "Employees disappear (in progress on Trello)",
+        "count": 1
+      },
+      {
+        "old": "/* /*Streger synlige*/ */",
+        "new": "/* /*Lines visible*/ */",
+        "count": 1
+      },
+      {
+        "old": "Thumb 8 col ikke klikbar på hele containeren (delvist i gang på Trello)",
+        "new": "Thumb 8-col: not clickable on whole container (partly in progress on Trello)",
+        "count": 1
+      },
+      {
+        "old": "/* Fix: Padding over og under offset images */",
+        "new": "/* Fix: padding above/below offset images */",
+        "count": 1
+      },
+      {
+        "old": "/* Fix slider padding left */",
+        "new": "/* Fix: slider padding left */",
+        "count": 1
+      },
+      {
+        "old": "/* Thumb items ikke fuld bredde */",
+        "new": "/* Thumb items not full width */",
+        "count": 1
+      },
+      {
+        "old": "/* Fix at tekst-padding (højreregel) ikke går ud over thumb grid */",
+        "new": "/* Fix: text padding (\"right rule\") must not affect thumb grid */",
+        "count": 1
+      },
+      {
+        "old": "/* Mindre luft mellem linjer i Employees modul */",
+        "new": "/* Tighter line spacing in Employees module */",
+        "count": 1
+      },
+      {
+        "old": "/* Fix at three thumbs ikke er påvirket af Accordions gap*/",
+        "new": "/* Fix: three thumbs not affected by Accordions gap */",
+        "count": 1
+      },
+      {
+        "old": "/* Fix at tekst-padding (højreregel) ikke går ud over Box */",
+        "new": "/* Fix: text padding (\"right rule\") must not affect Box */",
+        "count": 1
+      }
+    ]
+  },
+  "proposals.css": {
+    "original_sha256": "5a2043d2ab144077f10b727f3b9908b29f5b2c04b57ef9baa159ffc2ebdd4e3b",
+    "organized_sha256": "48026ac2abb969c1a4e8ee8cf65648afb4b2d4013971fc2201559f684b8caa24",
+    "line_count_original": 480,
+    "line_count_organized": 480,
+    "active_css_identical_exact_after_comment_strip": true,
+    "replacements": [
+      {
+        "old": "/* --- KNOBS (JUSTÉR) --- */",
+        "new": "/* --- KNOBS (ADJUST) --- */",
+        "count": 1
+      },
+      {
+        "old": "/* Fluid segments (NIX PILLE) */",
+        "new": "/* Fluid segments (DO NOT TOUCH) */",
+        "count": 1
+      },
+      {
+        "old": "/* --- SYSTEM (NIX PILLE) --- */",
+        "new": "/* --- SYSTEM (DO NOT TOUCH) --- */",
+        "count": 2
+      },
+      {
+        "old": "Forslag: Offset Image – align med venstre-regel",
+        "new": "Proposal: Offset Image — align with left rule",
+        "count": 1
+      },
+      {
+        "old": "Forslag: Hero – text width (measure)",
+        "new": "Proposal: Hero — text width (measure)",
+        "count": 1
+      },
+      {
+        "old": "/* --- JUSTÉR HER --- */",
+        "new": "/* --- ADJUST HERE --- */",
+        "count": 5
+      },
+      {
+        "old": "1 knob. 55ch ≈ behagelig læselængde for brødtekst",
+        "new": "1 knob. 55ch ≈ comfortable body-text measure",
+        "count": 1
+      },
+      {
+        "old": "Headline lidt smallere (så den ikke bliver “to lines of pain”)",
+        "new": "Headline slightly narrower (avoid “two lines of pain”)",
+        "count": 1
+      },
+      {
+        "old": "Scoped: ram kun Hero og kun tekst-elementerne.",
+        "new": "Scoped: target only Hero and text elements.",
+        "count": 1
+      },
+      {
+        "old": "Safety: hvis deres CSS har max-width:100% direkte på p",
+        "new": "Safety: if their CSS sets max-width:100% directly on p",
+        "count": 1
+      },
+      {
+        "old": "Forslag: Heading to text spacing rules",
+        "new": "Proposal: Heading to text spacing rules",
+        "count": 1
+      },
+      {
+        "old": "Forslag: Mere space fra Hero Text til CTA (Hænger sammen med ↑)",
+        "new": "Proposal: More space from Hero text to CTA (linked to above)",
+        "count": 1
+      },
+      {
+        "old": "Forslag: Quote module – breathing space right (\"right rule\")",
+        "new": "Proposal: Quote module — breathing space right (\"right rule\")",
+        "count": 1
+      },
+      {
+        "old": "Forslag: Text – paragraph spacing (baseline aligned)",
+        "new": "Proposal: Text — paragraph spacing (baseline aligned)",
+        "count": 1
+      },
+      {
+        "old": "Forslag: Smårettelser til Nav Right",
+        "new": "Proposal: Small Nav Right fixes",
+        "count": 1
+      },
+      {
+        "old": "Align ikon og sprogkode",
+        "new": "Align icon and language code",
+        "count": 1
+      },
+      {
+        "old": "Mere luft mellem ikon og sprogkode",
+        "new": "More space between icon and language code",
+        "count": 1
+      },
+      {
+        "old": "Tykkere stroke",
+        "new": "Thicker stroke",
+        "count": 1
+      },
+      {
+        "old": "Forslag: Header States - størrelser",
+        "new": "Proposal: Header states — sizes",
+        "count": 1
+      },
+      {
+        "old": "Forslag: Caption opacity",
+        "new": "Proposal: Caption opacity",
+        "count": 1
+      },
+      {
+        "old": "Forslag: Eyebrow small Bold -> Medium",
+        "new": "Proposal: Eyebrow small Bold -> Medium",
+        "count": 1
+      },
+      {
+        "old": "Forslag: Data - Equal spacing over/under stroke",
+        "new": "Proposal: Data — equal spacing above/below stroke",
+        "count": 1
+      },
+      {
+        "old": "Forslag: 64px mellem Text m. 'multiple rows'",
+        "new": "Proposal: 64px between Text rows with 'multiple rows'",
+        "count": 1
+      },
+      {
+        "old": "Forslag: Thumb H5 margin-bottom",
+        "new": "Proposal: Thumb H5 margin-bottom",
+        "count": 1
+      },
+      {
+        "old": "Forslag: Sprogvælger redesign",
+        "new": "Proposal: Language selector redesign",
+        "count": 1
+      },
+      {
+        "old": "behold dropdown absolute, men forankr til venstre + sørg for flex virker",
+        "new": "Keep dropdown absolute, anchor left + make flex work",
+        "count": 1
+      },
+      {
+        "old": "din dropdown-bredde",
+        "new": "dropdown width",
+        "count": 1
+      },
+      {
+        "old": "gør boksen symmetrisk (ingen top:-1 / +5px hacks)",
+        "new": "Make box symmetric (no top:-1 / +5px hacks)",
+        "count": 1
+      },
+      {
+        "old": "A = række + klikflade",
+        "new": "A = row + click area",
+        "count": 1
+      },
+      {
+        "old": "SPAN = label under globus",
+        "new": "SPAN = label under globe",
+        "count": 1
+      },
+      {
+        "old": "skjul original tekst",
+        "new": "Hide original text",
+        "count": 1
+      },
+      {
+        "old": "sprogforkortelse (en / sv)",
+        "new": "language abbreviation (en / sv)",
+        "count": 1
+      },
+      {
+        "old": "sprognavn",
+        "new": "language name",
+        "count": 1
+      },
+      {
+        "old": "Aktivt sprog i headeren",
+        "new": "Active language in header",
+        "count": 1
+      },
+      {
+        "old": "Forslag: Accordions",
+        "new": "Proposal: Accordions",
+        "count": 1
+      },
+      {
+        "old": "/*mere spacing imellem og til højre*/",
+        "new": "/* More spacing between items and to the right */",
+        "count": 1
+      },
+      {
+        "old": "/* Mere margin-bottom på hvert item */",
+        "new": "/* More margin-bottom on each item */",
+        "count": 1
+      },
+      {
+        "old": "/* Fix at data padding ikke går ud over two-thumb */",
+        "new": "/* Fix: data padding must not affect two-thumb */",
+        "count": 1
+      },
+      {
+        "old": "/* Fix at data padding ikke går ud over accordions */",
+        "new": "/* Fix: data padding must not affect accordions */",
+        "count": 1
+      },
+      {
+        "old": "/* Fix at data padding ikke går ud over thumb grid */",
+        "new": "/* Fix: data padding must not affect thumb grid */",
+        "count": 1
+      },
+      {
+        "old": "/* Forslag: Quote italic */",
+        "new": "/* Proposal: Quote italic */",
+        "count": 1
+      },
+      {
+        "old": "/* Forslag: Separator mindre \"tung\" (#000 -> #999) */",
+        "new": "/* Proposal: Separator less \"heavy\" (#000 -> #999) */",
+        "count": 1
+      },
+      {
+        "old": "/* Forslag: CTA Contact button more margin top */",
+        "new": "/* Proposal: CTA Contact button more margin top */",
+        "count": 1
+      },
+      {
+        "old": "/* Forslag: Luft under Eyebrow Small */",
+        "new": "/* Proposal: Space below Eyebrow Small */",
+        "count": 1
+      },
+      {
+        "old": "/*Note: denne skal måske ikke gælde eks. search eyebrows*/",
+        "new": "/* Note: may not apply to e.g. search eyebrows */",
+        "count": 1
+      },
+      {
+        "old": "/* Forslag: Separator line mindre \"tung\" (#000 -> #999) */",
+        "new": "/* Proposal: Separator line less \"heavy\" (#000 -> #999) */",
+        "count": 1
+      },
+      {
+        "old": "/* Forslag: H1 Letter spacing */",
+        "new": "/* Proposal: H1 letter spacing */",
+        "count": 1
+      },
+      {
+        "old": "/* Tekstlængder \"højreregel\" */",
+        "new": "/* Text lengths \"right rule\" */",
+        "count": 1
+      }
+    ]
+  }
+}

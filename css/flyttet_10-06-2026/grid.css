@@ -188,7 +188,7 @@
 }
 
 
-/* Prevent nav ul from shifting left during nav scroll effect */
+/* Forhindr nav ul i at rykke op mod venstre ved nav scroll effekt */
 .main-header__col:first-child {
     width: 72px;
     min-width: 72px;

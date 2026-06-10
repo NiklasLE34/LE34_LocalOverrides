@@ -1,15 +1,15 @@
 
 /* /* ============================================== */
-/*    64px above/below containers (reported in Trello) */
+/*    64px over og under containere (Meldt ind på Trello) */
 /*    ============================================== */
 
-/* /* All sections */ */
+/* /* Alle sektioner */ */
 /* .module .container{ */
 /*   padding-top: 64px; */
 /*   padding-bottom: 64px; */
 /* } */
 
-/*   /* Except first section on the page*/ 
+/*   /* Undtagen første sektion på siden*/ 
 /*   section:first-child { */
 /* } */
 
@@ -17,7 +17,7 @@
 
 
 /* ==============================================
-   64px above/below Image/Video Single Offset
+   64px over og under Image/Video Single Offset
    ============================================== */
 /*.miv-single--right_offset{
   padding-top: 64px
@@ -32,7 +32,7 @@
 
 
 /* /* ============================================== */
-/*    Employees disappear (in progress on Trello) */
+/*    Employees forsvinder (In progress på Trello) */
 /*    ============================================== */ */
 /* section.module.employees .employee{ */
 /*   display: flex !important; */
@@ -60,7 +60,7 @@
 /*   display: none !important; */
 /* } */
 
-/* /*Lines visible*/ */
+/* /*Streger synlige*/ */
 /* .animated.employee:after, .animated.table-item:after{ */
 /* opacity: 1; */
 /* } */
@@ -68,7 +68,7 @@
 
 
 /* ==============================================
-   Thumb 8-col: not clickable on whole container (partly in progress on Trello)
+   Thumb 8 col ikke klikbar på hele containeren (delvist i gang på Trello)
    ============================================== */
 a.thumb-item__full-link.initialized {
     z-index: -1 !important;
@@ -101,7 +101,7 @@ a.thumb-item__full-link.initialized {
 
 
 
-/* Fix: padding above/below offset images */
+/* Fix: Padding over og under offset images */
 
 /*.miv-single--right_offset{
   padding-top: 64px;
@@ -118,25 +118,25 @@ padding-top:200px !important;
 }*/
 
 
-/* Fix: slider padding left */
+/* Fix slider padding left */
 
 .container--spacing-left {
   padding-left: 40px !important;
 }
 
 
-/* Thumb items not full width */
+/* Thumb items ikke fuld bredde */
 .thumb-item--has-full-link .text--visible{
   max-width: 96% !important;
 }
 
 
-/* Fix: text padding ("right rule") must not affect thumb grid */
+/* Fix at tekst-padding (højreregel) ikke går ud over thumb grid */
 .thumb-grid .grid{
 padding-right: 0px !important;
 }
 
-/* Tighter line spacing in Employees module */
+/* Mindre luft mellem linjer i Employees modul */
 .employee__contact .employee__text {
     margin-top: 2px !important;
 }
@@ -146,12 +146,12 @@ padding-right: 0px !important;
 }
 
 
-/* Fix: three thumbs not affected by Accordions gap */
+/* Fix at three thumbs ikke er påvirket af Accordions gap*/
 [data-gap][data-gap="3"]{
 gap:40px;
 }
 
-/* Fix: text padding ("right rule") must not affect Box */
+/* Fix at tekst-padding (højreregel) ikke går ud over Box */
 @media (min-width: 1281px) {
     .module-box > .container > .grid {
         padding-right: 0 !Important;

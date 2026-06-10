@@ -1,20 +1,20 @@
 /* ==============================================
-   TYPOGRAPHY — CONTROL PANEL
+   TYPOGRAFI – KONTROLPANEL
    ============================================== */
 
 /* ==============================================
-   1) ADJUST HERE
-   All type tweaks live in this block
+   1) JUSTÉR HER
+   Alt tweak sker i denne blok
    ============================================== */
 
 :root{
-  /* GLOBAL SCALE */
+  /* GLOBAL SKALERING */
   --type-scale: 1;
 
-  /* BREAKPOINT SCALE */
+  /* BREAKPOINT SKALERING */
   --mq-scale: 1;
 
-  /* SIZES */
+  /* STØRRELSER */
   --h1: 2.5rem;
   --h2: 2.25rem;
   --h3: 1.5rem;
@@ -59,7 +59,7 @@
   /* HERO */
   --hero-p-scale: 1;
 
-  /* DATA MODULE — typography knobs (titles + subtitle) */
+  /* DATA module – typography knobs (titles + subtitle) */
   --data-title-big: 4rem;
   --data-title-medium: 3rem;
   --data-title-small: 2rem;
@@ -69,7 +69,7 @@
 
 /* ==============================================
    2) BREAKPOINTS
-   Adjust only --mq-scale here
+   Justér kun --mq-scale her
    ============================================== */
 
 /* Large desktop */
@@ -99,14 +99,14 @@
 
 
 /* ==============================================
-   3) SYSTEM — DO NOT TOUCH
+   3) SYSTEM – LAD STÅ
    ============================================== */
 
 html{
   font-size: calc(100% * var(--type-scale, 1) * var(--mq-scale, 1));
 }
 
-/* HEADINGS */
+/* OVERSKRIFTER */
 h1.heading-01{ font-size: var(--h1); line-height: var(--lh-h1); }
 h2.heading-02{ font-size: var(--h2); line-height: var(--lh-h2); }
 
@@ -121,9 +121,9 @@ h5.heading-05{ font-size: var(--h5); line-height: var(--lh-h5); }
 
 h6.heading-06{ font-size: var(--h6); line-height: var(--lh-h6); }
 
-/* BODY TEXT */
+/* BRØDTEKST */
 p,
-/* LISTS */
+/*Lists*/
 #page li {
   font-size: var(--p);
   line-height: var(--lh-p);
@@ -135,13 +135,13 @@ p,
   line-height: var(--lh-p);
 }
 
-/* SMALL TEXT */
+/* SMÅ TEKSTER */
 .eyebrow{ font-size: var(--eyebrow); line-height: var(--lh-eyebrow); }
 .eyebrow--small{ font-size: var(--small); line-height: var(--lh-small); }
 .small{ font-size: var(--small); line-height: var(--lh-small); }
 .module-new-image-video__caption p{ font-size: var(--caption); line-height: var(--lh-caption); }
 
-/* QUOTES */
+/* CITATER */
 .quote{ font-size: var(--quote); line-height: var(--lh-quote); }
 .quote.big{ font-size: var(--quote-big); line-height: var(--lh-quote-big); }
 
@@ -196,7 +196,7 @@ font-size: 1rem;
 font-size: var(--caption);
 }
 
-/* Office and Employees module text  */
+/* Tekster i Office og Employees moduler  */
 .link-cta span{
 font-size: 0.875rem;
 }
