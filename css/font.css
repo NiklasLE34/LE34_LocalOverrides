@@ -60,9 +60,9 @@
   --hero-p-scale: 1;
 
   /* DATA MODULE — typography knobs (titles + subtitle) */
-  --data-title-big: 4rem;
-  --data-title-medium: 3rem;
-  --data-title-small: 2rem;
+  --data-title-big: 3rem;
+  --data-title-medium: 2.5rem;
+  --data-title-small: 1.75rem;
   --data-subtitle-size: 1.1rem;
 }
 
