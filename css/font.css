@@ -1,36 +1,38 @@
 /* ==============================================
-   TYPOGRAPHY — CONTROL PANEL
+   FONT — TYPOGRAPHY SYSTEM
    ============================================== */
 
+
 /* ==============================================
-   1) ADJUST HERE
-   All type tweaks live in this block
+   TYPOGRAPHY VALUES
+   Shared typography measurements and scales
    ============================================== */
 
 :root{
+
   /* GLOBAL SCALE */
   --type-scale: 1;
 
   /* BREAKPOINT SCALE */
   --mq-scale: 1;
 
-  /* SIZES */
+  /* TYPOGRAPHY SIZES */
   --h1: 2.5rem;
   --h2: 2.25rem;
   --h3: 1.5rem;
   --h4: 1.5rem;
   --h5: 1.5rem;
-  --th5: 1.25rem; /* thumb item h5 */
+  --th5: 1.25rem; /* Thumb item heading */
   --h6: 1rem;
 
-  --p: 0.875rem; /* 1 = 16px | 0.9375 ≈ 15px | 0.875 ≈ 14px */
+  --p: 0.875rem; /* 14px */
 
-  --eyebrow: 0.75rem; /* 12px */
-  --small: 0.75rem; /* 12px */
-  --caption: 0.75rem; /* 13px */
+  --eyebrow: 0.75rem;
+  --small: 0.75rem;
+  --caption: 0.75rem;
 
-  --quote: 1.5rem;     /* 24px */
-  --quote-big: 2.5rem; /* 40px */
+  --quote: 1.5rem;
+  --quote-big: 2.5rem;
 
   --data-l: 2.5rem;
   --data-m: 2rem;
@@ -39,7 +41,7 @@
   --input: 0.875rem;
   --nav: 0.8125rem;
 
-  /* LINE HEIGHT */
+  /* LINE HEIGHTS */
   --lh-h1: 1.20;
   --lh-h2: 1.15;
   --lh-h3: 1.22;
@@ -56,20 +58,25 @@
 
   --lh-th5: 1.40;
 
-  /* HERO */
+  /* HERO TYPOGRAPHY */
   --hero-p-scale: 1;
 
-  /* DATA MODULE — typography knobs (titles + subtitle) */
+  /* DATA MODULE TYPOGRAPHY */
   --data-title-big: 3rem;
   --data-title-medium: 2.5rem;
   --data-title-small: 1.75rem;
   --data-subtitle-size: 1.1rem;
+  --data-header: 1.75rem;
+
+  /* BUTTON TYPOGRAPHY */
+  --btn-text: 0.8125rem;
 }
 
 
+
 /* ==============================================
-   2) BREAKPOINTS
-   Adjust only --mq-scale here
+   RESPONSIVE TYPOGRAPHY SCALING
+   Breakpoint-based typography scaling
    ============================================== */
 
 /* Large desktop */
@@ -98,63 +105,117 @@
 }
 
 
+
 /* ==============================================
-   3) SYSTEM — DO NOT TOUCH
+   TYPOGRAPHY IMPLEMENTATION
+   Typography values applied to theme selectors
    ============================================== */
 
 html{
   font-size: calc(100% * var(--type-scale, 1) * var(--mq-scale, 1));
 }
 
+
 /* HEADINGS */
-h1.heading-01{ font-size: var(--h1); line-height: var(--lh-h1); }
-h2.heading-02{ font-size: var(--h2); line-height: var(--lh-h2); }
 
-h2.heading-03{ font-size: var(--h3); line-height: var(--lh-h3); }
-h3.heading-03{ font-size: var(--h3); line-height: var(--lh-h3); }
+h1.heading-01{
+  font-size: var(--h1);
+  line-height: var(--lh-h1);
+}
 
-h2.heading-04{ font-size: var(--h4); line-height: var(--lh-h4); }
-h4.heading-04{ font-size: var(--h4); line-height: var(--lh-h4); }
+h2.heading-02{
+  font-size: var(--h2);
+  line-height: var(--lh-h2);
+}
 
-h2.heading-05{ font-size: var(--h5); line-height: var(--lh-h5); }
-h5.heading-05{ font-size: var(--h5); line-height: var(--lh-h5); }
+h2.heading-03,
+h3.heading-03{
+  font-size: var(--h3);
+  line-height: var(--lh-h3);
+}
 
-h6.heading-06{ font-size: var(--h6); line-height: var(--lh-h6); }
+h2.heading-04,
+h4.heading-04{
+  font-size: var(--h4);
+  line-height: var(--lh-h4);
+}
+
+h2.heading-05,
+h5.heading-05{
+  font-size: var(--h5);
+  line-height: var(--lh-h5);
+}
+
+h6.heading-06{
+  font-size: var(--h6);
+  line-height: var(--lh-h6);
+}
+
 
 /* BODY TEXT */
+
 p,
-/* LISTS */
-#page li {
+#page li{
   font-size: var(--p);
   line-height: var(--lh-p);
 }
 
-/* HERO */
+
+/* HERO TYPOGRAPHY */
+
 .module-hero .text p{
   font-size: calc(var(--p) * var(--hero-p-scale));
   line-height: var(--lh-p);
 }
 
+
 /* SMALL TEXT */
-.eyebrow{ font-size: var(--eyebrow); line-height: var(--lh-eyebrow); }
-.eyebrow--small{ font-size: var(--small); line-height: var(--lh-small); }
-.small{ font-size: var(--small); line-height: var(--lh-small); }
-.module-new-image-video__caption p{ font-size: var(--caption); line-height: var(--lh-caption); }
+
+.eyebrow{
+  font-size: var(--eyebrow);
+  line-height: var(--lh-eyebrow);
+}
+
+.eyebrow--small,
+.small{
+  font-size: var(--small);
+  line-height: var(--lh-small);
+}
+
+.module-new-image-video__caption p,
+.module-hero .fixed-block .image-caption{
+  font-size: var(--caption);
+  line-height: var(--lh-caption);
+}
+
 
 /* QUOTES */
-.quote{ font-size: var(--quote); line-height: var(--lh-quote); }
-.quote.big{ font-size: var(--quote-big); line-height: var(--lh-quote-big); }
 
-/* DATA */
-.data-large{ font-size: var(--data-l); }
-.data-medium{ font-size: var(--data-m); }
-.data-small{ font-size: var(--data-s); }
+.quote{
+  font-size: var(--quote);
+  line-height: var(--lh-quote);
+}
 
-/* NAV */
-input, textarea{ font-size: var(--input); }
-.main-header__nav ul li a{ font-size: var(--nav); }
+.quote.big{
+  font-size: var(--quote-big);
+  line-height: var(--lh-quote-big);
+}
 
-/* Data titles */
+
+/* DATA TYPOGRAPHY */
+
+.data-large{
+  font-size: var(--data-l);
+}
+
+.data-medium{
+  font-size: var(--data-m);
+}
+
+.data-small{
+  font-size: var(--data-s);
+}
+
 .data-item__title.number-item.big,
 .data-item__title.big{
   font-size: var(--data-title-big);
@@ -168,7 +229,7 @@ input, textarea{ font-size: var(--input); }
   font-size: var(--data-title-small);
 }
 
-/* Subtitle (h5 override – because module overrides fonts.css) */
+/* Data module subtitle */
 .data-item__subtitle,
 .data-item__subtitle.h5,
 .data-item__subtitle.heading-05,
@@ -178,34 +239,55 @@ input, textarea{ font-size: var(--input); }
   font-size: var(--data-subtitle-size);
 }
 
-.link-cta, .btn{
-font-size: 0.8125;
+.data-item__header{
+  font-size: var(--data-header);
 }
 
 
-.container .aside .text .aside__content--same-style {
-font-size: 1.5rem;
+/* NAVIGATION & FORMS */
+
+input,
+textarea{
+  font-size: var(--input);
+}
+
+.main-header__nav ul li a{
+  font-size: var(--nav);
+}
+
+.lang-menu__current{
+font-size: var(--nav);
 }
 
 
-.services-list__group ul li span {
-font-size: 1rem;
+/* BUTTON TYPOGRAPHY */
+
+.link-cta,
+.btn{
+  font-size: var(--btn-text);
 }
 
-.module-hero .fixed-block .image-caption {
-font-size: var(--caption);
-}
-
-/* Office and Employees module text  */
 .link-cta span{
-font-size: 0.875rem;
-}
-
-.employee__text, .employee__text a{
-font-size: var(--p);
+  font-size: var(--p);
 }
 
 
-.data-item__header {
-font-size: 1.75rem;
+/* MODULE-SPECIFIC TYPOGRAPHY */
+
+.employee__text,
+.employee__text a{
+  font-size: var(--p);
+  line-height: var(--lh-p);
 }
+
+.container .aside .text .aside__content--same-style{
+  font-size: 1.5rem;
+}
+
+
+/* Services font */
+.services-list__group ul li span{
+  font-size: 1rem;
+}
+
+

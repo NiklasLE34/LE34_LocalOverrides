@@ -67,12 +67,12 @@
 
 
 
-/* ==============================================
-   Thumb 8-col: not clickable on whole container (partly in progress on Trello)
-   ============================================== */
-a.thumb-item__full-link.initialized {
-    z-index: -1 !important;
-}
+/* /* ============================================== */
+/*    Thumb 8-col: not clickable on whole container (partly in progress on Trello) */
+/*    ============================================== */ */
+/* a.thumb-item__full-link.initialized { */
+/*     z-index: -1 !important; */
+/* } */
 
 
 
@@ -80,7 +80,7 @@ a.thumb-item__full-link.initialized {
    Header – compact spacing (desktop)
    ============================================== */
 
-@media (max-width: 1440px) and (min-width: 1281px){
+@media (max-width: 1920px) and (min-width: 1281px){
 
   #header .main-header__languages{
     margin-right: 24px !important; /* was 32 */

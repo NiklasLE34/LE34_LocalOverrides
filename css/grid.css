@@ -1,31 +1,35 @@
 /* ==============================================
-   GRID.CSS – clean left-rule / right-rule logic
+   GRID — CONTENT ALIGNMENT SYSTEM
    ============================================== */
 
 
 /* ==============================================
-   VARIABLES
+   GRID VARIABLES
+   Shared measurements used by the layout system
    ============================================== */
 
 :root {
-  /* JS updates this above 1280px based on nav position */
+  /* Updated by left-rule.js on large desktop layouts */
   --grid-aside-width: 326px;
 
   /*
-    Used when desktop nav is gone / cannot be measured.
-    Glides smoothly from ~222px at 1280px
-    down toward normal container margins at 768px.
+    Fallback width used when navigation cannot be
+    measured directly.
   */
   --grid-aside-width-fallback: clamp(20px, calc(39.453125vw - 283px), 222px);
 
   --grid-aside-gap: 64px;
+
+  /* Maximum width available for eyebrow content */
   --grid-eyebrow-max: calc(var(--grid-aside-width) - var(--grid-aside-gap));
 }
 
 
+
 /* ==============================================
-   HEADER – center nav UL between logo and right tools
-   Only applies while desktop header exists
+   TOP NAVIGATION ALIGNMENT
+   Centers navigation between logo and right-side
+   utilities on desktop layouts
    ============================================== */
 
 @media (min-width: 1025px) {
@@ -107,9 +111,11 @@
 }
 
 
+
 /* ==============================================
-   CONTENT GRID – large desktop
-   Nav exists, so use nav-driven --grid-aside-width
+   CONTENT GRID ALIGNMENT
+   Large desktop layouts using navigation-driven
+   grid measurements
    ============================================== */
 
 @media (min-width: 1281px) {
@@ -133,10 +139,11 @@
 }
 
 
+
 /* ==============================================
-   CONTENT GRID – medium/tablet desktop
-   Nav is gone or unreliable, so use controlled fallback
-   No right-rule here
+   CONTENT GRID ALIGNMENT
+   Medium desktop and tablet layouts using
+   fallback grid measurements
    ============================================== */
 
 @media (min-width: 769px) and (max-width: 1280px) {
@@ -149,9 +156,11 @@
 }
 
 
+
 /* ==============================================
-   ASIDE – desktop-ish fallback below nav breakpoint
-   Keeps aside predictable without relying on nav
+   ASIDE LAYOUT
+   Fallback aside sizing below navigation-driven
+   breakpoints
    ============================================== */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -169,9 +178,11 @@
 }
 
 
+
 /* ==============================================
-   TABLET / SMALLER
-   Let layout breathe naturally
+   SMALL SCREEN LAYOUT
+   Simplified layout behaviour for tablet and
+   mobile devices
    ============================================== */
 
 @media (max-width: 768px) {
@@ -188,9 +199,15 @@
 }
 
 
-/* Prevent nav ul from shifting left during nav scroll effect */
+
+/* ==============================================
+   NAVIGATION SCROLL STABILITY
+   Prevents horizontal movement of navigation
+   during header state transitions
+   ============================================== */
+
 .main-header__col:first-child {
-    width: 72px;
-    min-width: 72px;
-    flex: 0 0 72px;
+  width: 72px;
+  min-width: 72px;
+  flex: 0 0 72px;
 }
