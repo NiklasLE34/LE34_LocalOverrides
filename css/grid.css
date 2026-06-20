@@ -3,6 +3,8 @@
    ============================================== */
 
 
+
+
 /* ==============================================
    GRID VARIABLES
    Shared measurements used by the layout system
@@ -121,7 +123,7 @@
 @media (min-width: 1281px) {
 
   .container .aside {
-    max-width: var(--grid-aside-width);
+    width: var(--grid-aside-width);
     padding-right: var(--grid-aside-gap);
     box-sizing: border-box !important;
     margin-bottom: 0;

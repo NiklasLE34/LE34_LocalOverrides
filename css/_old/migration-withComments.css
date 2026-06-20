@@ -1,0 +1,160 @@
+
+/* /* ============================================== */
+/*    64px above/below containers (reported in Trello) */
+/*    ============================================== */
+
+/* /* All sections */ */
+/* .module .container{ */
+/*   padding-top: 64px; */
+/*   padding-bottom: 64px; */
+/* } */
+
+/*   /* Except first section on the page*/ 
+/*   section:first-child { */
+/* } */
+
+
+
+
+/* ==============================================
+   64px above/below Image/Video Single Offset
+   ============================================== */
+/*.miv-single--right_offset{
+  padding-top: 64px
+  padding-bottom: 64px;
+}
+
+.miv-single--left_offset{
+  padding-top: 64px;
+  padding-bottom: 64px;
+}*/
+
+
+
+/* /* ============================================== */
+/*    Employees disappear (in progress on Trello) */
+/*    ============================================== */ */
+/* section.module.employees .employee{ */
+/*   display: flex !important; */
+/*   flex-direction: column !important; */
+/* } */
+
+/* @media (min-width: 768px){ */
+/*   section.module.employees .employee{ */
+/*     flex-direction: row !important; */
+/*   } */
+/* } */
+
+/* /* Reveal override */ */
+/* section.module.employees .employee, */
+/* section.module.employees .employee__col, */
+/* section.module.employees .animated{ */
+/*   opacity: 1 !important; */
+/*   transform: none !important; */
+/* } */
+
+/* /* Image wipe overlay fix */ */
+/* section.module.employees .super-img::after, */
+/* section.module.employees .wrap::after{ */
+/*   opacity: 0 !important; */
+/*   display: none !important; */
+/* } */
+
+/* /*Lines visible*/ */
+/* .animated.employee:after, .animated.table-item:after{ */
+/* opacity: 1; */
+/* } */
+
+
+
+/* /* ============================================== */
+/*    Thumb 8-col: not clickable on whole container (partly in progress on Trello) */
+/*    ============================================== */ */
+/* a.thumb-item__full-link.initialized { */
+/*     z-index: -1 !important; */
+/* } */
+
+
+
+/* ==============================================
+   Header – compact spacing (desktop)
+   ============================================== */
+
+@media (max-width: 1920px) and (min-width: 1281px){
+
+  #header .main-header__languages{
+    margin-right: 24px !important; /* was 32 */
+  }
+
+  /* search + globe icons */
+  #header .main-header__search svg,
+  #header nav.main-header__languages.lang-menu > svg{
+    width: 18px !important; /* was 20 */
+    height: 18px !important;
+  }
+
+  /* #header .btn--narrow{ */
+  /*   padding: 0 12px !important; /* was 20 */ */
+  /* } */
+
+}
+
+
+
+/* Fix: padding above/below offset images */
+
+/*.miv-single--right_offset{
+  padding-top: 64px;
+  padding-bottom: 64px;
+}*/
+
+/*.miv-single--left_offset{
+ padding-top: 64px;
+padding-bottom: 64px;
+}*/
+
+/*.module-text:first-child{
+padding-top:200px !important;
+}*/
+
+
+/* Fix: slider padding left */
+
+.container--spacing-left {
+  padding-left: 40px !important;
+}
+
+
+/* Thumb items not full width */
+.thumb-item--has-full-link .text--visible{
+  max-width: 96% !important;
+}
+
+
+/* Fix: text padding ("right rule") must not affect thumb grid */
+.thumb-grid .grid{
+padding-right: 0px !important;
+}
+
+/* Tighter line spacing in Employees module */
+.employee__contact .employee__text {
+    margin-top: 2px !important;
+}
+
+.employee__text:not(:last-child) {
+    margin-top: 2px !important;
+}
+
+
+/* Fix: three thumbs not affected by Accordions gap */
+[data-gap][data-gap="3"]{
+gap:40px;
+}
+
+/* Fix: text padding ("right rule") must not affect Box */
+@media (min-width: 1281px) {
+    .module-box > .container > .grid {
+        padding-right: 0 !Important;
+    }
+}
+

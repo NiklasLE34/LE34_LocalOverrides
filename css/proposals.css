@@ -1,4 +1,12 @@
 /* ==============================================
+   PROPOSALS — DESIGN ADJUSTMENTS
+   ============================================== */
+
+
+
+
+
+/* ==============================================
    Topnav Gaps (fluid)
    ============================================== */
 
@@ -8,33 +16,30 @@
   --nav-gap-base: 20px;
 
   /* Desktop caps */
-  --nav-gap-min: 20px; /* at 1280 */
-  --nav-gap-mid: 24px; /* at 1536 */
-  --nav-gap-max: 32px; /* at 1920 */ /* was 40px */
+  --nav-gap-min: 20px;
+  --nav-gap-mid: 24px;
+  --nav-gap-max: 32px;
 
   /* Fluid segments (DO NOT TOUCH) */
-  --nav-gap-fluid-1280-1536: calc(0.694vw + 11.111px);  /* 1280->20, 1536->24 */
-  --nav-gap-fluid-1536-1920: calc(3.704vw - 32.889px);  /* 1536->24, 1920->40 */
+  --nav-gap-fluid-1280-1536: calc(0.694vw + 11.111px);
+  --nav-gap-fluid-1536-1920: calc(3.704vw - 32.889px);
 
   /* Choose which fluid segment to use */
   --nav-gap: var(--nav-gap-base);
 }
 
-/* Fluid 1280 → 1536 */
 @media (min-width: 1280px){
   :root{
     --nav-gap: clamp(var(--nav-gap-min), var(--nav-gap-fluid-1280-1536), var(--nav-gap-mid));
   }
 }
 
-/* Fluid 1536 → 1920 */
 @media (min-width: 1536px){
   :root{
     --nav-gap: clamp(var(--nav-gap-mid), var(--nav-gap-fluid-1536-1920), var(--nav-gap-max));
   }
 }
 
-/* --- SYSTEM (DO NOT TOUCH) --- */
 @media (min-width: 1025px){
   #header .main-header__nav > ul{
     display: flex;
@@ -46,7 +51,243 @@
 
 
 /* ==============================================
-   Proposal: Offset Image — align with left rule
+   Small Nav Right fixes
+   ============================================== */
+
+nav.main-header__languages.lang-menu {
+  align-items: center;
+}
+
+.lang-menu svg { 
+  margin-right: 8px;
+  display:none;
+}
+
+.main-header {
+  stroke-width: 1.2;
+}
+
+
+/* ==============================================
+   Header states — sizes
+   ============================================== */
+
+.main-header__logo {
+  width: 4rem;
+  height: 4rem;
+  max-height: 4rem;
+  max-width: 4rem;
+}
+
+.main-header--shadow .main-header__logo {
+  max-height: 3.5rem;
+  max-width: 3.5rem;
+}
+
+
+/* ==============================================
+   Language selector redesign
+   ============================================== */
+
+.lang-menu__nav{
+  left: 0;
+  top:32px;
+  right: auto;
+  display: flex;
+  flex-direction: column;
+  width: 56px;
+  padding: 6px 0 4px 0;
+}
+
+.lang-menu__nav::after{
+  bottom: 0;
+  right: -8px;
+  left:-8px;
+  top: 0;
+  width: auto;
+  height: auto;
+  box-shadow: 0 6px 10px -6px #0000001f;
+}
+
+.lang-menu__item a{
+  display:flex;
+  align-items:center;
+  width:100%;
+  height:28px;
+  margin:0;
+  box-sizing:border-box;
+}
+
+.lang-menu__item a span{
+  display:block;
+  width:20px;
+  text-align:center;
+}
+
+.lang-menu__item a::before,
+.lang-menu__item a::after{
+  bottom:8px;
+}
+
+.lang-menu__item a span{
+  font-size:0;
+}
+
+.lang-menu__item a span::before{
+  display:inline-block;
+  width:20px;
+  text-align:center;
+  font-size:14px;
+  opacity: .6;
+}
+
+.lang-menu__item a span::after{
+  font-size:var(--nav);
+  margin-left:0px;
+  white-space:nowrap;
+}
+
+.lang-menu__item a[href*="/en/"] span::after{
+  content:"English";
+}
+
+.lang-menu__item a[href*="/sv/"] span::after{
+  content:"Svenska";
+}
+
+.lang-menu__current span{
+  font-size:0;
+}
+
+.lang-menu__current span::after{
+  content:"Dansk";
+  font-size:var(--nav);
+}
+
+
+/* ==============================================
+   Hero — text width (measure)
+   ============================================== */
+
+:root{
+  --hero-text-max: 64ch;
+  --hero-title-max: 32ch;
+}
+
+.module-hero .heading-01{
+  max-width: var(--hero-title-max);
+}
+
+.module-hero .text{
+  max-width: var(--hero-text-max);
+}
+
+.module-hero .text p{
+  max-width: inherit;
+}
+
+
+/* ==============================================
+   Heading to text spacing rules
+   ============================================== */
+
+:root{
+  --space-heading-to-text: 0.25em;
+  --hero-space-title-to-text: 0.25em;
+}
+
+body .text h1:not(:last-child),
+body .text h2:not(:last-child),
+body .text h3:not(:last-child),
+body .text h4:not(:last-child),
+body .text h5:not(:last-child),
+body .text h6:not(:last-child),
+body .text .leading:not(:last-child){
+  margin-bottom: var(--space-heading-to-text);
+}
+
+.module-hero .text h1:not(:last-child),
+.module-hero .module-hero__content .heading-01:not(:last-child){
+  margin-bottom: var(--hero-space-title-to-text);
+}
+
+
+/* ==============================================
+   More space from Hero text to CTA
+   ============================================== */
+
+.module-hero .text {
+  margin-bottom: 24px;
+}
+
+
+/* ==============================================
+   H1 letter spacing
+   ============================================== */
+
+.module-hero__content .heading-01{
+  letter-spacing: .05rem;
+}
+
+
+/* ==============================================
+   Hero – cancel 22px mobile/tablet spacing jumps
+   ============================================== */
+
+@media (max-width: 1024px) {
+
+  .module-hero {
+    margin-bottom: 64px !important;
+  }
+
+  .module-hero.module-hero--v3 .module-hero__content {
+    margin-top: 64px !important;
+  }
+
+}
+
+
+/* ==============================================
+   Text module – breathing space right
+   ============================================== */
+
+@media (min-width: 768px){
+
+  .module-text .text-item{
+    padding-right: var(--text-column-padding-right);
+  }
+
+  .row .text-item{
+    padding-right: calc(var(--text-column-padding-right));
+  }
+
+}
+
+
+/* ==============================================
+   Text — paragraph spacing (baseline aligned)
+   ============================================== */
+
+:root{
+  --text-paragraph-gap: 1;
+}
+
+.module-text .text p:not(:last-child){
+  margin-bottom: calc(var(--lh-p) * var(--text-paragraph-gap) * 1em);
+}
+
+
+/* ==============================================
+   64px between Text rows with 'multiple rows'
+   ============================================== */
+
+.text-items.text-items--multiple {
+  gap: 64px 40px !important;
+}
+
+
+/* ==============================================
+   Offset Image — align with left rule
    ============================================== */
 
 .module-new-image-video .miv-single--right_offset,
@@ -70,411 +311,99 @@
 
 
 /* ==============================================
-   Proposal: Hero — text width (measure)
+   Caption opacity
    ============================================== */
 
-/* --- ADJUST HERE --- */
-:root{
-  /* 1 knob. 55ch ≈ comfortable body-text measure */
-  --hero-text-max: 64ch; /* was 68ch */
-
-  /* Headline slightly narrower (avoid “two lines of pain”) */
-  --hero-title-max: 32ch; /* was 26ch */
-}
-
-/* --- SYSTEM (DO NOT TOUCH) --- */
-/* Scoped: target only Hero and text elements.
-   Replaces dev default “max-width: 100%” for hero text. */
-.module-hero .heading-01{
-  max-width: var(--hero-title-max);
-}
-
-.module-hero .text{
-  max-width: var(--hero-text-max);
-}
-
-/* Safety: if their CSS sets max-width:100% directly on p */
-.module-hero .text p{
-  max-width: inherit;
-}
-
-
-/* ==============================================
-   Proposal: Heading to text spacing rules
-   ============================================== */
-
-/* --- ADJUST HERE --- */
-:root{
-  /* Global default for headings inside .text */
-  --space-heading-to-text: 0.25em;
-
-  /* Hero exception (keep as 16px unless you decide otherwise) */
-  --hero-space-title-to-text: 0.25em;
-}
-
-/* --- APPLY (matches theme selectors) --- */
-body .text h1:not(:last-child),
-body .text h2:not(:last-child),
-body .text h3:not(:last-child),
-body .text h4:not(:last-child),
-body .text h5:not(:last-child),
-body .text h6:not(:last-child),
-body .text .leading:not(:last-child){
-  margin-bottom: var(--space-heading-to-text);
-}
-
-/* Hero: override only H1 → text (so Hero can be different if needed later) */
-.module-hero .text h1:not(:last-child),
-.module-hero .module-hero__content .heading-01:not(:last-child){
-  margin-bottom: var(--hero-space-title-to-text);
-}                                                              
-
-
-
-/* ==============================================               
-   Proposal: More space from Hero text to CTA (linked to above)
-   ============================================== */
-.module-hero .text {
-    margin-bottom: 24px;
-}
-
-
-
-/* ==============================================
-   Text module – breathing space right
-   (disabled on small mobile)
-   ============================================== */
-
-@media (min-width: 768px){
-
-  /* --- ADJUST HERE --- */
-  /*:root{
-    --text-column-padding-right: 40px;
-  }*/
-
-  /* Column breathing space */
-  .module-text .text-item{
-    padding-right: var(--text-column-padding-right);
-  }
-
-  /* Row breathing space ("right rule") */
-  .row .text-item{
-    padding-right: calc(var(--text-column-padding-right));
-  }
-
-}
-
-
-
-/* ==============================================
-   Proposal: Quote module — breathing space right ("right rule")
-   ============================================== */
-/*.module .quote {
-  padding-right: calc(var(--grid-aside-width));
-}*/
-
-
-
-/* ==============================================
-   Proposal: Text — paragraph spacing (baseline aligned)
-   ============================================== */
-
-/* --- ADJUST HERE --- */
-:root{
-  /* 1.00 = aligns columns best (baseline step) */
-  --text-paragraph-gap: 1;
-}
-
-/* --- APPLY --- */
-/* Override the global `p:not(:last-child){ margin-bottom: 1rem; }` locally */
-.module-text .text p:not(:last-child){
-  margin-bottom: calc(var(--lh-p) * var(--text-paragraph-gap) * 1em);
-}
-
-
-
-/* ==============================================
-   Proposal: Small Nav Right fixes
-   ============================================== */
-
-/* Align icon and language code */
-nav.main-header__languages.lang-menu {
-  align-items: center;
-}
-
-/* More space between icon and language code */
-.lang-menu svg { 
-  margin-right: 8px;
-  display:none;
-}
-
-
-/* Thicker stroke */
-.main-header {
-  stroke-width: 1.2;    
-}
-
-
-
-
-/* ==============================================
-   Proposal: Header states — sizes
-   ============================================== */
-
-/* --- ADJUST HERE --- */
-.main-header__logo {
-  width:  4rem;      /*64px*/
-  height: 4rem;      
-  max-height: 4rem;  
-  max-width: 4rem;   
-}
-
-.main-header--shadow .main-header__logo {
-  max-height: 3.5rem;  /*56px*/
-  max-width: 3.5rem;
-}
-
-
-
-/* ==============================================
-   Proposal: Caption opacity
-   ============================================== */
-   
 .module-new-image-video__caption{
   opacity: 0.75;
-} 
-
-
-/* ==============================================
-   Proposal: Eyebrow small Bold -> Medium
-   ============================================== */
-.eyebrow--small {
-  font-weight: 350;
 }
 
 
-
 /* ==============================================
-   Proposal: Data — equal spacing above/below stroke 
+   Data — equal spacing above/below stroke
    ============================================== */
+
 .data-item__top {
   margin-bottom: 16px;
   padding-bottom:0;
 }
 
 
-
 /* ==============================================
-   Proposal: 64px between Text rows with 'multiple rows' 
+   Accordions
    ============================================== */
-.text-items.text-items--multiple {
-  gap: 64px 40px !important;
-}
-
-
-/* ==============================================
-   Proposal: Thumb H5 margin-bottom 
-   ============================================== */
-.thumb-item .heading-05{
-}
-
-
-/* ==============================================
-   Proposal: Language selector redesign 
-   ============================================== */
-
-/* Keep dropdown absolute, anchor left + make flex work */
-.lang-menu__nav{
-  left: 0;
-  top:32px;
-  right: auto;
-  display: flex;
-  flex-direction: column;
-  width: 56px; /* dropdown width */ /* was 88px */
-  padding: 6px 0 4px 0;
-}
-
-/* Make box symmetric (no top:-1 / +5px hacks) */
-.lang-menu__nav::after{
-  bottom: 0;
-  right: -8px;
-  left:-8px;
-  top: 0;
-  width: auto;
-  height: auto;
-  /*background-color:#999;*/ /*DEBUG*/
- box-shadow: 0 6px 10px -6px #0000001f;
-  
-}
-/* A = row + click area */
-.lang-menu__item a{
-  display:flex;
-  align-items:center;
-  width:100%;
-  height:28px;
-  margin:0;
-  box-sizing:border-box;
-  /*background: rgba(0,0,0,0.15); */ /* DEBUG */
-}
-
-/* SPAN = label under globe */
-.lang-menu__item a span{
-  display:block;
-  width:20px;
-  text-align:center;
-  /*padding: 0 2px;*/
-}
-
-.lang-menu__item a::before,
-.lang-menu__item a::after{
-  bottom:8px;
-  /*left:28px;*/
-}
-
-/* Hide original text */
-.lang-menu__item a span{
-  font-size:0;
-}
-
-/* language abbreviation (en / sv) */
-.lang-menu__item a span::before{
-  display:inline-block;
-  width:20px;
-  text-align:center;
-  font-size:14px;
-  opacity: .6;
-  
-}
-
-/* language name */
-.lang-menu__item a span::after{
-  font-size:var(--nav);
-  margin-left:0px;
-  white-space:nowrap;
-}
-
-/* EN */
-/*.lang-menu__item a[href*="/en/"] span::before{ content:"en"; }*/
-.lang-menu__item a[href*="/en/"] span::after{ content:"English"; }
-
-/* SV */
-/*.lang-menu__item a[href*="/sv/"] span::before{ content:"sv"; }*/
-.lang-menu__item a[href*="/sv/"] span::after{ content:"Svenska"; }
-
-
-/* Active language in header */
-.lang-menu__current span{
-  font-size:0;
-}
-
-.lang-menu__current span::after{
-  content:"Dansk";
-  font-size:var(--nav);
-}
-
-
-/* ==============================================
-   Proposal: Accordions
-   ============================================== */
-/* More spacing between items and to the right */
 
 [data-gap] {
-    gap: 64px;
-  	row-gap: 64px;
+  gap: 64px;
+  row-gap: 64px;
 }
 
-/* More margin-bottom on each item */
-
-/*.services-list__group ul li:not(:last-child) {
-margin-bottom: 32px;
-}*/
-
-
-/* Fix: data padding must not affect two-thumb */
-
+/* data padding must not affect two-thumb */
 .two-thumbs__items.two-thumbs__items--normal.two-thumbs__items--center {
-    padding-right: 0;
+  padding-right: 0;
 }
 
-/* Fix: data padding must not affect accordions */
+/* data padding must not affect accordions */
 .services-list{
-padding-right: 0 !important;
-}
-
-/* Fix: data padding must not affect thumb grid */
-/*.grid{
-padding-right: 0 !important;
-}
-
-/*----------------------------------------------------*/
-
-/* Proposal: Quote italic */
-/*.quote p{
-    font-style: italic;
-}*/
-
-/* Proposal: Separator less "heavy" (#000 -> #999) */
-.module-separator .eyebrow{
-border-bottom: 1px solid #999999;
+  padding-right: 0 !important;
 }
 
 
-/* Proposal: CTA Contact button more margin top */
-.cta-contact .btn{
-margin-top: 32px;
-}
+/* ==============================================
+   Eyebrow small Bold -> Medium
+   ============================================== */
 
-
-/* Proposal: Space below Eyebrow Small */
-/* Note: may not apply to e.g. search eyebrows */
 .eyebrow--small {
-margin-bottom: 1em;
+  font-weight: 350;
 }
 
 
-/* Proposal: Separator line less "heavy" (#000 -> #999) */
+/* ==============================================
+   Space below Eyebrow Small
+   ============================================== */
+
+.eyebrow--small {
+  margin-bottom: 1em;
+}
+
+
+/* ==============================================
+   Separator less "heavy" (#000 -> #999)
+   ============================================== */
+
 .module-separator .eyebrow{
-border-bottom: 1px solid #999999;
+  border-bottom: 1px solid #999999;
 }
 
 
-/* Proposal: H1 letter spacing */
-.module-hero__content .heading-01{
-  letter-spacing: .05rem;
+/* ==============================================
+   Separator line less "heavy" (#000 -> #999)
+   ============================================== */
+
+.module-separator .eyebrow{
+  border-bottom: 1px solid #999999;
 }
 
 
-/* Thumb Headings & paragraphs padding right */
+/* ==============================================
+   CTA Contact button more margin top
+   ============================================== */
+
+.cta-contact .btn{
+  margin-top: 32px;
+}
+
+
+/* ==============================================
+   Thumb Headings & paragraphs padding right
+   ============================================== */
+
 .thumb-item__heading{
-padding-right:40px;
+  padding-right:40px;
 }
 
 .thumb-item__description{
-padding-right: 40px
-}
-
-/* -------------------- */
-
-
-/* Text lengths "right rule" */
-/*.text-items{
-padding-right: calc(var(--grid-aside-width));
-}*/
-
-/* ==============================================
-   Hero – cancel 22px mobile/tablet spacing jumps
-   ============================================== */
-
-@media (max-width: 1024px) {
-
-  .module-hero {
-    margin-bottom: 64px !important;
-  }
-
-  .module-hero.module-hero--v3 .module-hero__content {
-    margin-top: 64px !important;
-  }
-
+  padding-right:40px;
 }
 
 
