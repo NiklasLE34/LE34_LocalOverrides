@@ -29,20 +29,20 @@
 
 
 
-/* /* ============================================== */
-/*    SLIDER ADJUSTMENTS */
-/*    Alignment and spacing adjustments */
-/*    ============================================== */ */
+/* ==============================================
+   SLIDER ADJUSTMENTS
+   Alignment and spacing adjustments
+   ============================================== */
 
-/* /* M03: Slider body aligned with left-rule grid */ */
-/* body .module-slider__body{ */
-/*   max-width: calc(100% - var(--grid-aside-width)); */
-/* } */
+/* M03: Slider body aligned with left-rule grid */
+body .module-slider__body{
+  max-width: calc(100% - var(--grid-aside-width));
+}
 
-/* /* M04: Slider module does not respect page margin */ */
-/* .container--spacing-left{ */
-/*   padding-left: 40px !important; */
-/* } */
+/* M04: Slider module does not respect page margin, had 64px*/
+.container--spacing-left{
+  padding-left: 40px !important;
+}
 
 
 
