@@ -36,7 +36,6 @@
 
 body .module-slider__body{
   max-width: calc(100% - var(--grid-aside-width));
-  max-width: none;
 }
 
 .container--spacing-left{
