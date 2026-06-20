@@ -123,7 +123,7 @@
 @media (min-width: 1281px) {
 
   .container .aside {
-    width: var(--grid-aside-width);
+    max-width: var(--grid-aside-width) !important;
     padding-right: var(--grid-aside-gap);
     box-sizing: border-box !important;
     margin-bottom: 0;
