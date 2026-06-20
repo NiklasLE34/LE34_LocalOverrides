@@ -10,18 +10,19 @@
    HEADER ADJUSTMENTS
    Desktop spacing and navigation refinements
    ============================================== */
+  
+  /* M01: Space between current language and contact button */
+  @media (max-width: 1920px) and (min-width: 1281px){
 
-@media (max-width: 1920px) and (min-width: 1281px){
-
-  #header .main-header__languages{
-    margin-right: 24px !important;
+    #header .main-header__languages{
+      margin-right: 24px !important; /* was 32px */
   }
 
-  /* Search and language selector icons */
+  /* M02: Search and language selector icons */
   #header .main-header__search svg,
   #header nav.main-header__languages.lang-menu > svg{
-    width: 18px !important;
-    height: 18px !important;
+    width: 18px !important; /* was 20px */
+    height: 18px !important; /* was 20px */
   }
 
 }
@@ -35,6 +36,7 @@
 
 body .module-slider__body{
   max-width: calc(100% - var(--grid-aside-width));
+  max-width: none;
 }
 
 .container--spacing-left{
