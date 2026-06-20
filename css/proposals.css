@@ -7,8 +7,10 @@
 
 
 /* ==============================================
-   Topnav Gaps (fluid)
+   Header / Navigation
    ============================================== */
+
+/* Topnav Gaps (fluid) */
 
 /* --- KNOBS (ADJUST) --- */
 :root{
@@ -50,9 +52,7 @@
 }
 
 
-/* ==============================================
-   Small Nav Right fixes
-   ============================================== */
+/* Small Nav Right fixes */
 
 nav.main-header__languages.lang-menu {
   align-items: center;
@@ -68,9 +68,7 @@ nav.main-header__languages.lang-menu {
 }
 
 
-/* ==============================================
-   Header states — sizes
-   ============================================== */
+/* Header states — sizes */
 
 .main-header__logo {
   width: 4rem;
@@ -85,9 +83,7 @@ nav.main-header__languages.lang-menu {
 }
 
 
-/* ==============================================
-   Language selector redesign
-   ============================================== */
+/* Language selector redesign */
 
 .lang-menu__nav{
   left: 0;
@@ -166,8 +162,10 @@ nav.main-header__languages.lang-menu {
 
 
 /* ==============================================
-   Hero — text width (measure)
+   Hero
    ============================================== */
+
+/* Hero — text width (measure) */
 
 :root{
   --hero-text-max: 64ch;
@@ -187,9 +185,7 @@ nav.main-header__languages.lang-menu {
 }
 
 
-/* ==============================================
-   Heading to text spacing rules
-   ============================================== */
+/* Heading to text spacing rules */
 
 :root{
   --space-heading-to-text: 0.25em;
@@ -212,27 +208,21 @@ body .text .leading:not(:last-child){
 }
 
 
-/* ==============================================
-   More space from Hero text to CTA
-   ============================================== */
+/* More space from Hero text to CTA */
 
 .module-hero .text {
   margin-bottom: 24px;
 }
 
 
-/* ==============================================
-   H1 letter spacing
-   ============================================== */
+/* H1 letter spacing */
 
 .module-hero__content .heading-01{
   letter-spacing: .05rem;
 }
 
 
-/* ==============================================
-   Hero – cancel 22px mobile/tablet spacing jumps
-   ============================================== */
+/* Hero – cancel 22px mobile/tablet spacing jumps */
 
 @media (max-width: 1024px) {
 
@@ -248,8 +238,10 @@ body .text .leading:not(:last-child){
 
 
 /* ==============================================
-   Text module – breathing space right
+   Text
    ============================================== */
+
+/* Text module – breathing space right */
 
 @media (min-width: 768px){
 
@@ -264,9 +256,7 @@ body .text .leading:not(:last-child){
 }
 
 
-/* ==============================================
-   Text — paragraph spacing (baseline aligned)
-   ============================================== */
+/* Text — paragraph spacing (baseline aligned) */
 
 :root{
   --text-paragraph-gap: 1;
@@ -277,9 +267,7 @@ body .text .leading:not(:last-child){
 }
 
 
-/* ==============================================
-   64px between Text rows with 'multiple rows'
-   ============================================== */
+/* 64px between Text rows with 'multiple rows' */
 
 .text-items.text-items--multiple {
   gap: 64px 40px !important;
@@ -287,8 +275,10 @@ body .text .leading:not(:last-child){
 
 
 /* ==============================================
-   Offset Image — align with left rule
+   Image / Video
    ============================================== */
+
+/* Offset Image — align with left rule */
 
 .module-new-image-video .miv-single--right_offset,
 .module-new-image-video .miv-single--left_offset {
@@ -310,9 +300,7 @@ body .text .leading:not(:last-child){
 }
 
 
-/* ==============================================
-   Caption opacity
-   ============================================== */
+/* Caption opacity */
 
 .module-new-image-video__caption{
   opacity: 0.75;
@@ -320,8 +308,10 @@ body .text .leading:not(:last-child){
 
 
 /* ==============================================
-   Data — equal spacing above/below stroke
+   Data
    ============================================== */
+
+/* Data — equal spacing above/below stroke */
 
 .data-item__top {
   margin-bottom: 16px;
@@ -333,34 +323,26 @@ body .text .leading:not(:last-child){
    Accordions
    ============================================== */
 
+/* Accordions */
+
 [data-gap] {
   gap: 64px;
   row-gap: 64px;
 }
 
-/* data padding must not affect two-thumb */
-.two-thumbs__items.two-thumbs__items--normal.two-thumbs__items--center {
-  padding-right: 0;
-}
-
-/* data padding must not affect accordions */
-.services-list{
-  padding-right: 0 !important;
-}
-
 
 /* ==============================================
-   Eyebrow small Bold -> Medium
+   Eyebrow
    ============================================== */
+
+/* Eyebrow small Bold -> Medium */
 
 .eyebrow--small {
   font-weight: 350;
 }
 
 
-/* ==============================================
-   Space below Eyebrow Small
-   ============================================== */
+/* Space below Eyebrow Small */
 
 .eyebrow--small {
   margin-bottom: 1em;
@@ -368,8 +350,17 @@ body .text .leading:not(:last-child){
 
 
 /* ==============================================
-   Separator less "heavy" (#000 -> #999)
+   Separator
    ============================================== */
+
+/* Separator less "heavy" (#000 -> #999) */
+
+.module-separator .eyebrow{
+  border-bottom: 1px solid #999999;
+}
+
+
+/* Separator line less "heavy" (#000 -> #999) */
 
 .module-separator .eyebrow{
   border-bottom: 1px solid #999999;
@@ -377,17 +368,10 @@ body .text .leading:not(:last-child){
 
 
 /* ==============================================
-   Separator line less "heavy" (#000 -> #999)
+   CTA
    ============================================== */
 
-.module-separator .eyebrow{
-  border-bottom: 1px solid #999999;
-}
-
-
-/* ==============================================
-   CTA Contact button more margin top
-   ============================================== */
+/* CTA Contact button more margin top */
 
 .cta-contact .btn{
   margin-top: 32px;
@@ -395,8 +379,10 @@ body .text .leading:not(:last-child){
 
 
 /* ==============================================
-   Thumb Headings & paragraphs padding right
+   Thumbs
    ============================================== */
+
+/* Thumb Headings & paragraphs padding right */
 
 .thumb-item__heading{
   padding-right:40px;
@@ -407,3 +393,17 @@ body .text .leading:not(:last-child){
 }
 
 
+/* ==============================================
+   MODULE EXCEPTIONS
+   Excluded from broader layout and spacing rules
+   ============================================== */
+
+   /* Two-thumb excluded from Data padding */
+.two-thumbs__items.two-thumbs__items--normal.two-thumbs__items--center {
+  padding-right: 0;
+}
+
+  /* Accordions excluded from Data padding */
+.services-list{
+  padding-right: 0 !important;
+}
