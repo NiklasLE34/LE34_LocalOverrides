@@ -29,18 +29,20 @@
 
 
 
-/* ==============================================
-   SLIDER ADJUSTMENTS
-   Alignment and spacing adjustments
-   ============================================== */
+/* /* ============================================== */
+/*    SLIDER ADJUSTMENTS */
+/*    Alignment and spacing adjustments */
+/*    ============================================== */ */
 
-body .module-slider__body{
-  max-width: calc(100% - var(--grid-aside-width));
-}
+/* /* M03: Slider body aligned with left-rule grid */ */
+/* body .module-slider__body{ */
+/*   max-width: calc(100% - var(--grid-aside-width)); */
+/* } */
 
-.container--spacing-left{
-  padding-left: 40px !important;
-}
+/* /* M04: Slider module does not respect page margin */ */
+/* .container--spacing-left{ */
+/*   padding-left: 40px !important; */
+/* } */
 
 
 
@@ -49,6 +51,7 @@ body .module-slider__body{
    Text width adjustments
    ============================================== */
 
+/* M05: Thumb text max-width reduced */
 .thumb-item--has-full-link .text--visible{
   max-width: 96% !important;
 }
@@ -60,6 +63,7 @@ body .module-slider__body{
    Contact information spacing refinements
    ============================================== */
 
+/* M06: Employee text spacing reduced */
 .employee__contact .employee__text{
   margin-top: 2px !important;
 }
