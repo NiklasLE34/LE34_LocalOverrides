@@ -10,7 +10,7 @@
    Header / Navigation
    ============================================== */
 
-/* Topnav Gaps (fluid) */
+/* P01: Topnav Gaps (fluid) */
 
 /* --- KNOBS (ADJUST) --- */
 :root{
@@ -22,7 +22,7 @@
   --nav-gap-mid: 24px;
   --nav-gap-max: 32px;
 
-  /* Fluid segments (DO NOT TOUCH) */
+  /* Fluid segments */
   --nav-gap-fluid-1280-1536: calc(0.694vw + 11.111px);
   --nav-gap-fluid-1536-1920: calc(3.704vw - 32.889px);
 
@@ -51,8 +51,7 @@
   }
 }
 
-
-/* Small Nav Right fixes */
+/* P02: Small nav right fixes */
 
 nav.main-header__languages.lang-menu {
   align-items: center;
@@ -67,8 +66,7 @@ nav.main-header__languages.lang-menu {
   stroke-width: 1.2;
 }
 
-
-/* Header states — sizes */
+/* P03: Header logo sizes */
 
 .main-header__logo {
   width: 4rem;
@@ -82,8 +80,7 @@ nav.main-header__languages.lang-menu {
   max-width: 3.5rem;
 }
 
-
-/* Language selector redesign */
+/* P04: Language selector redesign */
 
 .lang-menu__nav{
   left: 0;
@@ -165,7 +162,7 @@ nav.main-header__languages.lang-menu {
    Hero
    ============================================== */
 
-/* Hero — text width (measure) */
+/* P05: Hero text width */
 
 :root{
   --hero-text-max: 64ch;
@@ -184,8 +181,7 @@ nav.main-header__languages.lang-menu {
   max-width: inherit;
 }
 
-
-/* Heading to text spacing rules */
+/* P06: Heading to text spacing */
 
 :root{
   --space-heading-to-text: 0.25em;
@@ -207,22 +203,19 @@ body .text .leading:not(:last-child){
   margin-bottom: var(--hero-space-title-to-text);
 }
 
-
-/* More space from Hero text to CTA */
+/* P07: Hero text to CTA spacing */
 
 .module-hero .text {
   margin-bottom: 24px;
 }
 
-
-/* H1 letter spacing */
+/* P08: H1 letter spacing */
 
 .module-hero__content .heading-01{
   letter-spacing: .05rem;
 }
 
-
-/* Hero – cancel 22px mobile/tablet spacing jumps */
+/* P09: Hero mobile spacing jumps removed */
 
 @media (max-width: 1024px) {
 
@@ -241,7 +234,7 @@ body .text .leading:not(:last-child){
    Text
    ============================================== */
 
-/* Text module – breathing space right */
+/* P10: Text module right breathing space */
 
 @media (min-width: 768px){
 
@@ -255,8 +248,7 @@ body .text .leading:not(:last-child){
 
 }
 
-
-/* Text — paragraph spacing (baseline aligned) */
+/* P11: Text paragraph spacing */
 
 :root{
   --text-paragraph-gap: 1;
@@ -266,8 +258,7 @@ body .text .leading:not(:last-child){
   margin-bottom: calc(var(--lh-p) * var(--text-paragraph-gap) * 1em);
 }
 
-
-/* 64px between Text rows with 'multiple rows' */
+/* P12: Multiple text rows spacing */
 
 .text-items.text-items--multiple {
   gap: 64px 40px !important;
@@ -278,7 +269,7 @@ body .text .leading:not(:last-child){
    Image / Video
    ============================================== */
 
-/* Offset Image — align with left rule */
+/* P13: Offset image aligned with left rule */
 
 .module-new-image-video .miv-single--right_offset,
 .module-new-image-video .miv-single--left_offset {
@@ -299,8 +290,7 @@ body .text .leading:not(:last-child){
   }
 }
 
-
-/* Caption opacity */
+/* P14: Caption opacity reduced */
 
 .module-new-image-video__caption{
   opacity: 0.75;
@@ -311,7 +301,7 @@ body .text .leading:not(:last-child){
    Data
    ============================================== */
 
-/* Data — equal spacing above/below stroke */
+/* P15: Data spacing above stroke */
 
 .data-item__top {
   margin-bottom: 16px;
@@ -323,7 +313,7 @@ body .text .leading:not(:last-child){
    Accordions
    ============================================== */
 
-/* Accordions */
+/* P16: Accordion gap increased */
 
 [data-gap] {
   gap: 64px;
@@ -335,14 +325,13 @@ body .text .leading:not(:last-child){
    Eyebrow
    ============================================== */
 
-/* Eyebrow small Bold -> Medium */
+/* P17: Eyebrow small font weight reduced */
 
 .eyebrow--small {
   font-weight: 350;
 }
 
-
-/* Space below Eyebrow Small */
+/* P18: Eyebrow small bottom spacing */
 
 .eyebrow--small {
   margin-bottom: 1em;
@@ -353,14 +342,7 @@ body .text .leading:not(:last-child){
    Separator
    ============================================== */
 
-/* Separator less "heavy" (#000 -> #999) */
-
-.module-separator .eyebrow{
-  border-bottom: 1px solid #999999;
-}
-
-
-/* Separator line less "heavy" (#000 -> #999) */
+/* P19: Separator line colour reduced */
 
 .module-separator .eyebrow{
   border-bottom: 1px solid #999999;
@@ -371,7 +353,7 @@ body .text .leading:not(:last-child){
    CTA
    ============================================== */
 
-/* CTA Contact button more margin top */
+/* P20: CTA contact button top spacing */
 
 .cta-contact .btn{
   margin-top: 32px;
@@ -382,7 +364,7 @@ body .text .leading:not(:last-child){
    Thumbs
    ============================================== */
 
-/* Thumb Headings & paragraphs padding right */
+/* P21: Thumb text padding right */
 
 .thumb-item__heading{
   padding-right:40px;
@@ -398,12 +380,13 @@ body .text .leading:not(:last-child){
    Excluded from broader layout and spacing rules
    ============================================== */
 
-   /* Two-thumb excluded from Data padding */
+/* P22: Two-thumb data padding exception */
+
 .two-thumbs__items.two-thumbs__items--normal.two-thumbs__items--center {
   padding-right: 0;
 }
 
-  /* Accordions excluded from Data padding */
+/* P23: Services list data padding exception */
 .services-list{
   padding-right: 0 !important;
 }

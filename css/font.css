@@ -76,7 +76,6 @@
 }
 
 
-
 /* ==============================================
    RESPONSIVE TYPOGRAPHY SCALING
    Breakpoint-based typography scaling
@@ -108,7 +107,6 @@
 }
 
 
-
 /* ==============================================
    TYPOGRAPHY IMPLEMENTATION
    Typography values applied to theme selectors
@@ -117,7 +115,6 @@
 html{
   font-size: calc(100% * var(--type-scale, 1) * var(--mq-scale, 1));
 }
-
 
 /* HEADINGS */
 
@@ -154,7 +151,6 @@ h6.heading-06{
   line-height: var(--lh-h6);
 }
 
-
 /* BODY TEXT */
 
 p,
@@ -163,14 +159,12 @@ p,
   line-height: var(--lh-p);
 }
 
-
 /* HERO TYPOGRAPHY */
 
 .module-hero .text p{
   font-size: calc(var(--p) * var(--hero-p-scale));
   line-height: var(--lh-p);
 }
-
 
 /* SMALL TEXT */
 
@@ -191,7 +185,6 @@ p,
   line-height: var(--lh-caption);
 }
 
-
 /* QUOTES */
 
 .quote{
@@ -203,7 +196,6 @@ p,
   font-size: var(--quote-big);
   line-height: var(--lh-quote-big);
 }
-
 
 /* DATA TYPOGRAPHY */
 
@@ -246,7 +238,6 @@ p,
   font-size: var(--data-header);
 }
 
-
 /* NAVIGATION & FORMS */
 
 input,
@@ -262,7 +253,6 @@ textarea{
 font-size: var(--nav);
 }
 
-
 /* BUTTON TYPOGRAPHY */
 
 .link-cta,
@@ -273,7 +263,6 @@ font-size: var(--nav);
 .link-cta span{
   font-size: var(--p);
 }
-
 
 /* MODULE-SPECIFIC TYPOGRAPHY */
 
@@ -286,7 +275,6 @@ font-size: var(--nav);
 .container .aside .text .aside__content--same-style{
   font-size: 1.5rem;
 }
-
 
 /* Services font */
 .services-list__group ul li span{

@@ -28,7 +28,6 @@
 }
 
 
-
 /* ==============================================
    SLIDER ADJUSTMENTS
    Alignment and spacing adjustments
@@ -45,7 +44,6 @@ body .module-slider__body{
 }
 
 
-
 /* ==============================================
    THUMB ADJUSTMENTS
    Text width adjustments
@@ -55,7 +53,6 @@ body .module-slider__body{
 .thumb-item--has-full-link .text--visible{
   max-width: 96% !important;
 }
-
 
 
 /* ==============================================
@@ -71,7 +68,6 @@ body .module-slider__body{
 .employee__text:not(:last-child){
   margin-top: 2px !important;
 }
-
 
 
 /* ==============================================

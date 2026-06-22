@@ -5,6 +5,7 @@
 
 
 
+
 /* ==============================================
    GRID VARIABLES
    Shared measurements used by the layout system
@@ -25,7 +26,6 @@
   /* Maximum width available for eyebrow content */
   --grid-eyebrow-max: calc(var(--grid-aside-width) - var(--grid-aside-gap));
 }
-
 
 
 /* ==============================================
@@ -113,7 +113,6 @@
 }
 
 
-
 /* ==============================================
    CONTENT GRID ALIGNMENT
    Large desktop layouts using navigation-driven
@@ -141,7 +140,6 @@
 }
 
 
-
 /* ==============================================
    CONTENT GRID ALIGNMENT
    Medium desktop and tablet layouts using
@@ -156,7 +154,6 @@
     box-sizing: border-box;
   }
 }
-
 
 
 /* ==============================================
@@ -180,7 +177,6 @@
 }
 
 
-
 /* ==============================================
    SMALL SCREEN LAYOUT
    Simplified layout behaviour for tablet and
@@ -199,7 +195,6 @@
     padding-right: 0;
   }
 }
-
 
 
 /* ==============================================
