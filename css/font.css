@@ -55,12 +55,12 @@
   --lh-quote: 1.50;
   --lh-quote-big: 1.40;
 
-  --lh-th5: 1.40;
+  /* --lh-th5: 1.40; */
 
   /* HERO TYPOGRAPHY */
   --hero-p-scale: 1;
 
-  /* DATA MODULE TYPOGRAPHY */
+  /* DATA TYPOGRAPHY */
   --data-title-big: 3rem;
   --data-title-medium: 2.5rem;
   --data-title-small: 1.75rem;
@@ -234,7 +234,7 @@ textarea{
 }
 
 .lang-menu__current{
-font-size: var(--nav);
+  font-size: var(--nav);
 }
 
 /* BUTTON TYPOGRAPHY */

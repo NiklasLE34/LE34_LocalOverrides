@@ -12,7 +12,7 @@
    ============================================== */
 
 :root {
-  /* Updated by left-rule.js on large desktop layouts */
+  /* Default value. Overwritten by left-rule.js. */
   --grid-aside-width: 326px;
 
   /*
@@ -23,7 +23,7 @@
 
   --grid-aside-gap: 64px;
 
-  /* Maximum width available for eyebrow content */
+  /* Optional width constraint for eyebrow content */
   --grid-eyebrow-max: calc(var(--grid-aside-width) - var(--grid-aside-gap));
 }
 
@@ -113,11 +113,12 @@
 }
 
 
-/* ==============================================
-   CONTENT GRID ALIGNMENT
-   Large desktop layouts using navigation-driven
-   grid measurements
-   ============================================== */
+/* CONTENT GRID ALIGNMENT
+   Navigation-driven desktop layout.
+   Aside width is calculated by left-rule.js and
+   used to establish left-rule and right-rule
+   alignment boundaries.
+*/
 
 @media (min-width: 1281px) {
 
