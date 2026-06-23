@@ -37,10 +37,6 @@
   --quote: 1.5rem;
   --quote-big: 2.5rem;
 
-  --data-l: 2.5rem;
-  --data-m: 2rem;
-  --data-s: 1.25rem;
-
   --input: 0.875rem;
   --nav: 0.8125rem;
 
@@ -198,18 +194,6 @@ p,
 }
 
 /* DATA TYPOGRAPHY */
-
-.data-large{
-  font-size: var(--data-l);
-}
-
-.data-medium{
-  font-size: var(--data-m);
-}
-
-.data-small{
-  font-size: var(--data-s);
-}
 
 .data-item__title.number-item.big,
 .data-item__title.big{
