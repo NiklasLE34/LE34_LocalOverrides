@@ -201,13 +201,11 @@
 /* ==============================================
    NAVIGATION SCROLL STABILITY
    Prevents horizontal movement of navigation
-   during header state transitions
+   during header and logo state transitions
    ============================================== */
 
-@media (min-width: 1024px) {
-  .main-header__col:first-child {
-    width: 72px;
-    min-width: 72px;
-    flex: 0 0 72px;
-  }
+.main-header__col:first-child {
+  width: 72px;
+  min-width: 72px;
+  flex: 0 0 72px;
 }
