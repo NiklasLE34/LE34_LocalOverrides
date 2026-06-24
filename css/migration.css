@@ -75,17 +75,17 @@ body .module-slider__body{
    Excluded from broader layout and spacing rules
    ============================================== */
 
-/* Thumb grid excluded from right-rule padding */
+/* M07: Thumb grid excluded from right-rule padding */
 .thumb-grid .grid{
   padding-right: 0 !important;
 }
 
-/* Three Thumbs excluded from accordion gap rules */
+/* M08: Three Thumbs excluded from accordion gap rules */
 [data-gap][data-gap="3"]{
   gap: 40px;
 }
 
-/* Box module excluded from right-rule padding */
+/* M09: Box module excluded from right-rule padding */
 @media (min-width: 1281px){
 
   .module-box > .container > .grid{
