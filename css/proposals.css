@@ -234,21 +234,21 @@ body .text .leading:not(:last-child){
    Text
    ============================================== */
 
-/* P10: Text module right breathing space */
+/* /* Text module right breathing space */ */
 
-@media (min-width: 768px){
+/* @media (min-width: 768px){ */
 
-  .module-text .text-item{
-    padding-right: var(--text-column-padding-right);
-  }
+/*   .module-text .text-item{ */
+/*     padding-right: var(--text-column-padding-right); */
+/*   } */
 
-  .row .text-item{
-    padding-right: calc(var(--text-column-padding-right));
-  }
+/*   .row .text-item{ */
+/*     padding-right: calc(var(--text-column-padding-right)); */
+/*   } */
 
-}
+/* } */
 
-/* P11: Text paragraph spacing */
+/* P10: Text paragraph spacing */
 
 :root{
   --text-paragraph-gap: 1;
@@ -258,7 +258,7 @@ body .text .leading:not(:last-child){
   margin-bottom: calc(var(--lh-p) * var(--text-paragraph-gap) * 1em);
 }
 
-/* P12: Multiple text rows spacing */
+/* P11: Multiple text rows spacing */
 
 .text-items.text-items--multiple {
   gap: 64px 40px !important;
@@ -269,7 +269,7 @@ body .text .leading:not(:last-child){
    Image / Video
    ============================================== */
 
-/* P13: Offset image aligned with left rule */
+/* P12: Offset image aligned with left rule */
 
 .module-new-image-video .miv-single--right_offset,
 .module-new-image-video .miv-single--left_offset {
@@ -290,7 +290,7 @@ body .text .leading:not(:last-child){
   }
 }
 
-/* P14: Caption opacity reduced */
+/* P13: Caption opacity reduced */
 
 .module-new-image-video__caption{
   opacity: 0.75;
@@ -301,7 +301,7 @@ body .text .leading:not(:last-child){
    Data
    ============================================== */
 
-/* P15: Data spacing above stroke */
+/* P14: Data spacing above stroke */
 
 .data-item__top {
   margin-bottom: 16px;
@@ -313,7 +313,7 @@ body .text .leading:not(:last-child){
    Accordions
    ============================================== */
 
-/* P16: Accordion gap increased */
+/* P15: Accordion gap increased */
 
 [data-gap] {
   gap: 64px;
@@ -325,13 +325,13 @@ body .text .leading:not(:last-child){
    Eyebrow
    ============================================== */
 
-/* P17: Eyebrow small font weight reduced */
+/* P16: Eyebrow small font weight reduced */
 
 .eyebrow--small {
   font-weight: 350;
 }
 
-/* P18: Eyebrow small bottom spacing */
+/* P17: Eyebrow small bottom spacing */
 
 .eyebrow--small {
   margin-bottom: 1em;
@@ -342,7 +342,7 @@ body .text .leading:not(:last-child){
    Separator
    ============================================== */
 
-/* P19: Separator line colour reduced */
+/* P18: Separator line colour reduced */
 
 .module-separator .eyebrow{
   border-bottom: 1px solid #999999;
@@ -353,7 +353,7 @@ body .text .leading:not(:last-child){
    CTA
    ============================================== */
 
-/* P20: CTA contact button top spacing */
+/* P19: CTA contact button top spacing */
 
 .cta-contact .btn{
   margin-top: 32px;
@@ -364,7 +364,7 @@ body .text .leading:not(:last-child){
    Thumbs
    ============================================== */
 
-/* P21: Thumb text padding right */
+/* P20: Thumb text padding right */
 
 .thumb-item__heading{
   padding-right:40px;
@@ -380,13 +380,13 @@ body .text .leading:not(:last-child){
    Excluded from broader layout and spacing rules
    ============================================== */
 
-/* P22: Two-thumb data padding exception */
+/* P21: Two-thumb data padding exception */
 
 .two-thumbs__items.two-thumbs__items--normal.two-thumbs__items--center {
   padding-right: 0;
 }
 
-/* P23: Services list data padding exception */
+/* P22: Services list data padding exception */
 .services-list{
   padding-right: 0 !important;
 }
