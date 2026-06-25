@@ -315,9 +315,9 @@ body .text .leading:not(:last-child){
 
 /* P15: Accordion gap increased */
 
-[data-gap] {
-  gap: 64px;
-  row-gap: 64px;
+.services-list[data-gap][data-gap="2"] {
+    column-gap: 64px;
+    width: calc(100% + 24px);
 }
 
 
