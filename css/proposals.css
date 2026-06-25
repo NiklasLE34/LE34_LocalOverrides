@@ -382,7 +382,7 @@ body .text .leading:not(:last-child){
 
 /* P21: Two-thumb data padding exception */
 
-.two-thumbs__items.two-thumbs__items--normal.two-thumbs__items--center {
+.two-thumbs__items.two-thumbs__items--normal.two-thumbs__items {
   padding-right: 0;
 }
 
