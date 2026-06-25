@@ -206,7 +206,7 @@ body .text .leading:not(:last-child){
 /* P07: Hero text to CTA spacing */
 
 .module-hero .text {
-  margin-bottom: 24px;
+  margin-bottom: 24px !important;
 }
 
 /* P08: H1 letter spacing */
