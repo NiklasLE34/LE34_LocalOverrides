@@ -234,17 +234,17 @@ body .text .leading:not(:last-child){
    Text
    ============================================== */
 
-/* /* Text module right breathing space */ */
+ /* Text module right breathing space */ 
 
-/* @media (min-width: 768px){ */
+/*  @media (min-width: 768px){ */
 
-/*   .module-text .text-item{ */
-/*     padding-right: var(--text-column-padding-right); */
-/*   } */
+/*    .module-text .text-item{ */
+/*      padding-right: var(--text-column-padding-right); */
+/*    } */
 
-/*   .row .text-item{ */
-/*     padding-right: calc(var(--text-column-padding-right)); */
-/*   } */
+/*    .row .text-item{ */
+/*      padding-right: calc(var(--text-column-padding-right)); */
+/*    } */
 
 /* } */
 
