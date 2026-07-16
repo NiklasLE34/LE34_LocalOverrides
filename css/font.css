@@ -266,11 +266,13 @@ textarea{
 }
 
 
-
+/* Text Headings - Small and Big */
 h2.heading-05{
 font-size: 1.125rem;
+line-height: var(--lh-h5);
 }
 
 h2.heading-01{
   font-size: 1.875rem;
+  line-height: var(--lh-h1);
 }
