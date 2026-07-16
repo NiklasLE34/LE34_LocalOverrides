@@ -136,7 +136,7 @@ h4.heading-04{
   line-height: var(--lh-h4);
 }
 
-h2.heading-05,
+/*h2.heading-05,*/
 h5.heading-05{
   font-size: var(--h5);
   line-height: var(--lh-h5);
@@ -267,7 +267,9 @@ textarea{
 
 
 
-
+h2.heading-05{
+font-size: 1.125rem;
+}
 
 h2.heading-01{
   font-size: 1.875rem;
