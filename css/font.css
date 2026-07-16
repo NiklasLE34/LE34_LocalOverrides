@@ -114,9 +114,13 @@ html{
 
 /* HEADINGS */
 
-h1.heading-01{
+h1{
   font-size: var(--h1);
   line-height: var(--lh-h1);
+}
+
+.heading-01{
+font-size: 1.875rem;
 }
 
 h2.heading-02{
