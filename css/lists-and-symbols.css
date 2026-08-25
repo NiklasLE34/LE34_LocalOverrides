@@ -1,0 +1,101 @@
+/* ==============================================
+   SUPERSCRIPT
+   ============================================== */
+   
+.tm-sign,
+.r-sign {
+  margin: 0 !important;
+  line-height: 0 !important;
+  display: inline !important;
+  position: relative !important;
+  vertical-align: baseline !important;
+  font-family: Gotham;
+  left:0.025em
+}
+
+.tm-sign {
+  font-size: calc(0.5em + 0.75rem) !important;
+  top: 0.08em !important;
+}
+
+.r-sign {
+  font-size: 2.25em !important;
+  top: 0.26em !important;
+  
+}
+
+.copy-sign {
+  -webkit-text-stroke: 0.015em currentColor !important;
+  font-family: Gotham;
+}
+
+
+/* ==============================================
+   LISTS
+   ============================================== */
+#page {
+--body-line-height: 1.6;
+--list-indent: 1.5rem;
+--list-marker-gap: 0.5rem;
+--list-item-gap: 0.5rem;
+--list-bullet-size: 0.65em;
+--list-number-size: 1em;
+}
+/* Keep paragraphs and list items on the same vertical rhythm */
+#page .text-items .text p,
+#page .text-items .text ul > li,
+#page .text-items .text ol > li {
+line-height: var(--body-line-height);
+}
+/* Shared styling for unordered and ordered lists */
+#page .text-items .text ul,
+#page .text-items .text ol {
+margin-left: 0;
+padding-left: calc(
+var(--list-indent) - var(--list-marker-gap)
+);
+list-style-position: outside;
+}
+/* Restore native list markers */
+#page .text-items .text ul {
+list-style-type: disc;
+}
+#page .text-items .text ol {
+list-style-type: decimal;
+}
+/* Reset the previous flex and pseudo-element solution */
+#page .text-items .text ul > li,
+#page .text-items .text ol > li {
+display: list-item;
+margin: 0 0 var(--list-item-gap);
+padding: 0;
+padding-left: var(--list-marker-gap);
+}
+#page .text-items .text ul > li:last-child,
+#page .text-items .text ol > li:last-child {
+margin-bottom: 0;
+}
+#page .text-items .text ul > li::before,
+#page .text-items .text ol > li::before {
+content: none;
+display: none;
+}
+/* Reduce unordered-list marker size */
+#page .text-items .text ul > li::marker {
+font-size: var(--list-bullet-size);
+}
+/* Use Nohemi for ordered-list markers */
+#page .text-items .text ol > li::marker {
+font-family: Nohemi, sans-serif;
+font-size: var(--list-number-size);
+font-weight: 300;
+}
+
+/* Remove top margin when UL follows the heading directly */
+
+#page .text-items .text
+  > :is(h1, h2, h3, h4, h5, h6, [class*="heading-"])
+  + ul {
+  margin-top: 0;
+}
+

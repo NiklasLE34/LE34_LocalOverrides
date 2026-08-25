@@ -3,7 +3,7 @@
     var cssBaseUrl = 'https://le34-localoverrides.pages.dev/css/';
     var jsBaseUrl = 'https://le34-localoverrides.pages.dev/js/';
 
-    var cssFiles = ['font.css', 'grid.css', 'migration.css', 'proposals.css'];
+    var cssFiles = ['font.css', 'grid.css', 'migration.css', 'proposals.css', 'lists-and-symbols.css'];
     var jsFiles = ['left-rule.js'];
 
     cssFiles.forEach(function(file) {
